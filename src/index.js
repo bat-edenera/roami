@@ -9,7 +9,7 @@ function component() {
 	var element = document.createElement('p');
   var btn = document.createElement('button');
 
-	element.innerHTML ='hello kick';
+	element.innerHTML ='please kick here';
   btn.innerHTML = 'Click haha';
   btn.onclick = printMe;
   element.appendChild(btn);
