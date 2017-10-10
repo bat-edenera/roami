@@ -33,7 +33,7 @@ module.exports = merge(common, {
 			}
 		}),
 		new ExtractTextPlugin({
-			filename: 'css/[name][hash:4].css',
+			filename: 'css/main[hash:4].css',
 			allChunks: true
 		})
 

@@ -5,7 +5,7 @@ const webpack = require('webpack');
 
 module.exports = merge(common, {
 	entry:{
-		index: ['./src/index', 'webpack-hot-middleware/client']
+		index: ['./src/index', 'webpack-hot-middleware/client?reload=true']
 	},
 	devtool: 'inline-source-map',
 	module:{

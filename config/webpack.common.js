@@ -1,15 +1,16 @@
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-module.exports = {
-  entry: {
-    index: path.resolve(__dirname, '../src/index.js'),
-  },
-  output: {
-    filename: 'js/[name][hash:4].js',
-    path: path.resolve(__dirname, '../dist'),
+var pages = ['index','other'];
+var confs = {
+	entry: {
+		main: path.resolve(__dirname, '../src/common.js')
+	},
+	output: {
+		filename: 'js/[name][hash:4].js',
+		path: path.resolve(__dirname, '../dist'),
 		publicPath: '/'
-  },
+	},
 	module:{
 		rules:[
 			{
@@ -24,7 +25,7 @@ module.exports = {
 				loader: 'url-loader',
 				options: {
 					limit: 512,
-					name: "images/[name].[ext]"
+					name: "images/[name][hash:4].[ext]"
 				}
 			},
 		]
@@ -32,16 +33,21 @@ module.exports = {
 	plugins: [
 		new CleanWebpackPlugin('dist',{
 			root:path.resolve(__dirname, '../'),
-		}),
-		new HtmlWebpackPlugin({
-			filename:path.resolve(__dirname,'../dist/index.html'),
-			template: 'index.html',
-      inject: true,
-      minify: {
-        removeComments: true,
-        collapseWhitespace: true,
-        removeAttributeQuotes: true
-      },
 		})
 	]
-};
+}
+pages.forEach(key=>{
+	confs.entry[key] = path.resolve(__dirname, '../src/'+key+'.js');
+	confs.plugins.push(new HtmlWebpackPlugin({
+		filename:path.resolve(__dirname,'../dist/'+key+'.html'),
+		template: key+'.html',
+		inject: true,
+		chunks: ['main',key],
+		minify: {
+			removeComments: true,
+			collapseWhitespace: false,
+			removeAttributeQuotes: true
+		},
+	}))
+})
+module.exports = confs;
