@@ -21,6 +21,10 @@ var confs = {
 				exclude:/node_modules/
 			},
 			{
+				test: /\.(htm|html)$/i,
+        loader: 'html-withimg-loader'
+			},
+			{
 				test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
 				loader: 'url-loader',
 				options: {
@@ -28,6 +32,14 @@ var confs = {
 					name: "images/[name][hash:4].[ext]"
 				}
 			},
+			{
+				test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+				loader: 'url-loader',
+				options: {
+					limit: 100,
+					name: 'css/font/[name].[hash:4].[ext]'
+				}
+			}
 		]
 	},
 	plugins: [
