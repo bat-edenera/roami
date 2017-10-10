@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 var pages = ['index','other'];
 var confs = {
 	entry: {
-		main: path.resolve(__dirname, '../src/common.js')
+		main: path.resolve(__dirname, '../src/assets/js/common.js')
 	},
 	output: {
 		filename: 'js/[name][hash:4].js',
@@ -37,12 +37,18 @@ var confs = {
 	]
 }
 pages.forEach(key=>{
-	confs.entry[key] = path.resolve(__dirname, '../src/'+key+'.js');
+	confs.entry[key] = path.resolve(__dirname, '../src/assets/js/'+key+'.js');
 	confs.plugins.push(new HtmlWebpackPlugin({
 		filename:path.resolve(__dirname,'../dist/'+key+'.html'),
-		template: key+'.html',
+		template: './src/view/'+key+'.html',
 		inject: true,
 		chunks: ['main',key],
+		chunksSortMode: function (chunk1, chunk2) {
+			var order = ['main', key];
+			var order1 = order.indexOf(chunk1.names[0]);
+			var order2 = order.indexOf(chunk2.names[0]);
+			return order1 - order2;
+		},
 		minify: {
 			removeComments: true,
 			collapseWhitespace: false,
