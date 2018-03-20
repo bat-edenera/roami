@@ -1,0 +1,14 @@
+$red:#e5020b;
+.clearfix{
+  zoom:1;
+  &:after{
+    content: '';
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+  }
+}
+input::-webkit-input-placeholder{
+  color:#999;
+}
