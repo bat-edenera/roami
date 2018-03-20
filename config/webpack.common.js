@@ -64,7 +64,7 @@ pages.forEach(key=>{
 		minify: {
 			removeComments: true,
 			collapseWhitespace: false,
-			removeAttributeQuotes: true
+			removeAttributeQuotes: false
 		},
 	}))
 })
