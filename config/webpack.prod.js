@@ -3,13 +3,16 @@ const merge = require('webpack-merge');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const common = require('./webpack.common.js');
+
+const extractCSS = new ExtractTextPlugin('css/common[contenthash:4].css');
+const extractSASS = new ExtractTextPlugin('css/[name][contenthash:4].css');
 module.exports = merge(common, {
 	devtool: "cheap-module-source-map",
 	module:{
 		rules:[
 			{
 				test: /\.css$/,
-				use: ExtractTextPlugin.extract({
+				use: extractCSS.extract({
 					fallback: 'style-loader',
 					//resolve-url-loader may be chained before sass-loader if necessary
 					use: ['css-loader']
@@ -17,7 +20,7 @@ module.exports = merge(common, {
 			},
 			{
 				test: /\.scss$/,
-				use: ExtractTextPlugin.extract({
+				use: extractSASS.extract({
 					fallback: 'style-loader',
 					//resolve-url-loader may be chained before sass-loader if necessary
 					use: ['css-loader', 'sass-loader']
@@ -32,10 +35,7 @@ module.exports = merge(common, {
 				'NODE_ENV': JSON.stringify('production')
 			}
 		}),
-		new ExtractTextPlugin({
-			filename: 'css/[name][hash:4].css',
-			allChunks: true
-		})
-
+		extractCSS,
+		extractSASS
 	]
 });
