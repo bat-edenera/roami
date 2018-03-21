@@ -1,8 +1,10 @@
 body{
-	background: #999;
-	height:100px;
-	background: url('../images/125_3.png') 50% 50% no-repeat;
-	p{
-		color: blue;
+	div{
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		cursor: move;
+		margin-right: 100px;
 	}
+	background: aqua;
 }
