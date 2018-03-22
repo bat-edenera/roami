@@ -194,7 +194,50 @@
 .main{
   height: calc(100vh - 54px);
   .container{
-    padding: 14px 22px 0 194px;
+    padding: 14px 22px 0 14px;
     height: 100%;
+    overflow-y: auto;
+    .box{
+      width: 100%;
+      background: #fff;
+      border-radius: 4px;
+      margin-bottom: 14px;
+      .title{
+        padding-left: 16px;
+        position: relative;
+        line-height: 60px;
+        border-bottom: 1px solid $bd;
+        color: #333;
+        span{
+          color: #999;
+          font-size: 12px;
+          margin-left: 5px;
+        }
+        &:before{
+          content: '';
+          position: absolute;
+          width: 4px;
+          background: $blue;height: 16px;
+          top: 22px;
+          left: 0;
+        }
+      }
+      .subtitle{
+        padding-left: 30px;
+        font-size: 16px;
+        color: #333333;
+        line-height: 47px;
+        position: relative;
+        &:before{
+          content: '·';
+          font-weight: bold;
+          font-size: 25px;
+          color: $blue;
+          position: absolute;
+          top: 0px;
+          left: 10px;
+        }
+      }
+    }
   }
 }

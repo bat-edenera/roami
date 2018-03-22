@@ -1,0 +1,45 @@
+.userinfo{
+  .b1{
+    form{
+      width: 1020px;
+      .item{
+        margin-bottom: 13px;
+        float: left;
+        width: 50%;
+        line-height: 34px;
+        font-size: 13px;
+        color: #666;
+        .left{
+          float: left;
+          width: 102px;
+          text-align: right;
+          span{
+            color: #ff3333;
+          }
+        }
+        .right{
+          float: left;
+          padding-left: 22px;
+          position: relative;
+          .info{
+            padding-left: 15px;
+            display: inline-block;
+          }
+          input{
+            line-height: 32px;
+            border: 1px solid $bd;
+            padding-left: 16px;
+            border-radius: 4px;
+            width: 360px;
+          }
+          .domain-tip{
+            position: absolute;
+            right: 18px;
+            color: #999;
+            top: 0px;
+          }
+        }
+      }
+    }
+  }
+}
