@@ -1,3 +1,4 @@
+<!-- webpack-roami -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -126,13 +127,13 @@
 						</div>
 					</li>
 				</ul>
-				<div class="form">
+				<div class="form j-formTab">
 					<ul class="tab clearfix">
 						<li class="active">我要治理</li>
 						<li>我要监测</li>
 					</ul>
 					<div class="info">
-						<form action="" method="post">
+						<form action="" method="post" class="active">
 							<div class="item">
 								<span>联系人</span>
 								<input type="text" name="name" placeholder="请输入联系人">
@@ -162,18 +163,64 @@
 							</div>
 							<div class="item">
 								<span>装修情况</span>
-								<input type="radio" name="decor" id="dec1">
-								<label for="dec1">Male</label>
-								<input type="radio" name="decor" id="dec2">
-								<label for="dec2">墙纸</label>
-								<input type="radio" name="decor" id="dec3">
-								<label for="dec3">组合柜</label>
-								<input type="radio" name="decor" id="dec4">
-								<label for="dec4">皮质家具</label>
-								<input type="radio" name="decor" id="dec5">
-								<label for="dec5">吊顶天花</label>
-								<input type="radio" name="decor" id="dec6">
-								<label for="dec6">布艺沙发</label>
+								<div class="right">
+									<div class="checkbox">
+										<input type="checkbox" name="decor1" id="dec1">
+										<label for="dec1">木地板</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" name="decor2" id="dec2">
+										<label for="dec2">墙纸</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" name="decor3" id="dec3">
+										<label for="dec3">组合柜</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" name="decor4" id="dec4">
+										<label for="dec4">皮质家具</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" name="decor5" id="dec5">
+										<label for="dec5">吊顶天花</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" name="decor6" id="dec6">
+										<label for="dec6">布艺沙发</label>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<button type="submit">提交</button>
+							</div>
+						</form>
+						<form action="" method="post">
+							<div class="item">
+								<span>联系人</span>
+								<input type="text" name="name" placeholder="请输入联系人">
+							</div>
+							<div class="item">
+								<span>电&nbsp;话</span>
+								<input type="text" name="phone" placeholder="请输入电话">
+							</div>
+							<div class="item">
+								<span>地区</span>
+								<select name="area_province" >
+									<option value="">请选择</option>
+								</select>
+								<select name="area_city" >
+									<option value="">请选择</option>
+								</select>
+							</div>
+							<div class="item">
+								<span>建筑面积</span>
+								<input type="text" name="build_area" placeholder="请输入建筑面积">
+							</div>
+							<div class="item">
+								<span>卧室数量</span>
+								<select name="room_num">
+									<option value="">请选择</option>
+								</select>
 							</div>
 							<div class="item">
 								<button type="submit">提交</button>
@@ -191,7 +238,7 @@
 				成功案例<span>success case</span>
 				<a href="">more</a>
 			</div>
-			<div class="inner clearfix">
+			<div class="inner clearfix j-taber">
 				<ul class="tab">
 					<li class="t">案例分类</li>
 					<li class="t1 active">家居办公</li>
@@ -237,7 +284,7 @@
 								<a href=""></a>
 							</div>
 							<p>
-								<a href="">今日头条</a>
+								<a href="">今日头条2</a>
 							</p>
 						</li>
 						<li>
@@ -246,7 +293,7 @@
 								<a href=""></a>
 							</div>
 							<p>
-								<a href="">德高中国</a>
+								<a href="">德高中国2</a>
 							</p>
 						</li>
 						<li>
@@ -255,7 +302,7 @@
 								<a href=""></a>
 							</div>
 							<p>
-								<a href="">百融金服</a>
+								<a href="">百融金服2</a>
 							</p>
 						</li>
 						<li>
@@ -264,7 +311,7 @@
 								<a href=""></a>
 							</div>
 							<p>
-								<a href="">澳洲电信</a>
+								<a href="">澳洲电信2</a>
 							</p>
 						</li>
 					</ul>
@@ -275,7 +322,7 @@
 								<a href=""></a>
 							</div>
 							<p>
-								<a href="">今日头条</a>
+								<a href="">今日头条3</a>
 							</p>
 						</li>
 						<li>
@@ -284,7 +331,7 @@
 								<a href=""></a>
 							</div>
 							<p>
-								<a href="">德高中国</a>
+								<a href="">德高中国3</a>
 							</p>
 						</li>
 						<li>
@@ -293,7 +340,7 @@
 								<a href=""></a>
 							</div>
 							<p>
-								<a href="">百融金服</a>
+								<a href="">百融金服3</a>
 							</p>
 						</li>
 						<li>
@@ -302,7 +349,7 @@
 								<a href=""></a>
 							</div>
 							<p>
-								<a href="">澳洲电信</a>
+								<a href="">澳洲电信3</a>
 							</p>
 						</li>
 					</ul>
@@ -313,7 +360,7 @@
 								<a href=""></a>
 							</div>
 							<p>
-								<a href="">今日头条</a>
+								<a href="">今日头条4</a>
 							</p>
 						</li>
 						<li>
@@ -322,7 +369,7 @@
 								<a href=""></a>
 							</div>
 							<p>
-								<a href="">德高中国</a>
+								<a href="">德高中国4</a>
 							</p>
 						</li>
 						<li>
@@ -331,7 +378,7 @@
 								<a href=""></a>
 							</div>
 							<p>
-								<a href="">百融金服</a>
+								<a href="">百融金服4</a>
 							</p>
 						</li>
 						<li>
@@ -340,7 +387,7 @@
 								<a href=""></a>
 							</div>
 							<p>
-								<a href="">澳洲电信</a>
+								<a href="">澳洲电信4</a>
 							</p>
 						</li>
 					</ul>
@@ -553,6 +600,14 @@
 			</ul>
 		</div>
 	</div>
-	 #include("./widget/footer.html")
+	<!-- 侧边栏 -->
+	<ul class="sidebar">
+		<li><img src="../assets/images/icon/ico-call.png" alt=""> 400-123-2588</li>
+		<li><img src="../assets/images/icon/ico-message.png" alt=""> <a href="javascript:;">在线留言</a></li>
+		<li><img src="../assets/images/icon/ico-qq.png" alt=""> <a href="javascript:;">检测治理咨询</a></li>
+		<li><img src="../assets/images/icon/ico-qq.png" alt=""> <a href="javascript:;">加盟代理咨询</a></li>
+		<li><img src="../assets/images/icon/ico-top.png" alt=""> <a href="javascript:;" class="j-toTop">返回顶部</a></li>
+	</ul> 
+	#include("./widget/footer.html")
 </body>
 </html>

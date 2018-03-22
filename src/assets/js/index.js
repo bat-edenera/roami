@@ -20,3 +20,26 @@ var productSwiper = new Swiper('.j-productSwiper', {
     prevEl: '.inner .prev',
   },
 })
+// <!-- 成功案例 -->
+$('.j-taber').on('click','.tab .t1',function(e){
+  var i = $(this).siblings().removeClass('active').end()
+  .addClass('active').index();
+  $('.j-taber').find('.list ul').removeClass('active')
+  .eq(i-1).addClass('active');
+})
+// <!-- 四大优势 -->
+$('.j-formTab').on('click','.tab li',function(e){
+  var i = $(this).siblings().removeClass('active').end()
+  .addClass('active').index();
+
+  $('.j-formTab').find('.info form').removeClass('active')
+  .eq(i).addClass('active');
+})
+
+$('.j-toTop').on('click',function(){
+  $("body,html").animate({
+      scrollTop: 0
+  }, 600);
+})
+
+
