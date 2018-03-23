@@ -28,7 +28,7 @@ var confs = {
 				test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
 				loader: 'url-loader',
 				options: {
-					limit: 512,
+					limit: 1,
 					name: "images/[name][hash:4].[ext]"
 				}
 			},
@@ -36,9 +36,16 @@ var confs = {
 				test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
 				loader: 'url-loader',
 				options: {
-					limit: 100,
+					limit: 1,
 					name: 'css/font/[name].[hash:4].[ext]'
 				}
+			},
+			{
+				test: /\.mp4$/,
+				loader: 'url-loader',
+				options: {
+					name: 'vedio/[name].[hash:4].[ext]'
+				} 
 			}
 		]
 	},
@@ -62,9 +69,9 @@ pages.forEach(key=>{
 			return order1 - order2;
 		},
 		minify: {
-			removeComments: true,
+			removeComments: false,
 			collapseWhitespace: false,
-			removeAttributeQuotes: true
+			removeAttributeQuotes: false
 		},
 	}))
 })
