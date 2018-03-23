@@ -7,8 +7,24 @@
         float: left;
         width: 50%;
         line-height: 34px;
+        height: 34px;
         font-size: 13px;
         color: #666;
+        &.block{
+          float: none;
+          width: 100%;
+          .right{
+            width: 898px;
+            textarea{
+              width: 100%;
+              resize: none;
+              height: 70px;
+              line-height: normal;
+              padding-top: 8px;
+              padding-right: 10px;
+            }
+          }
+        }
         .left{
           float: left;
           width: 102px;
@@ -26,7 +42,7 @@
             padding-left: 15px;
             display: inline-block;
           }
-          input[type=text],select{
+          input[type=text],select,textarea{
             display: inline-block;
             height: 34px;
             line-height: 32px;
@@ -36,7 +52,8 @@
             width: 360px;
           }
           select{
-
+            -webkit-appearance: none;
+            background: url(../images/icon/ico-arrow.png) no-repeat 95% 50%;
           }
           .radio{
             display: inline-block;
@@ -65,7 +82,9 @@
           }
           .tip{
             float: right;
-            font-size: 24px;
+            i{
+              font-size: 24px;
+            }
           }
         }
       }
