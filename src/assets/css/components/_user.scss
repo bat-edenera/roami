@@ -18,6 +18,7 @@
           }
         }
         .right{
+          width: 382px;
           float: left;
           padding-left: 22px;
           position: relative;
@@ -25,18 +26,46 @@
             padding-left: 15px;
             display: inline-block;
           }
-          input{
+          input[type=text],select{
+            display: inline-block;
+            height: 34px;
             line-height: 32px;
             border: 1px solid $bd;
             padding-left: 16px;
             border-radius: 4px;
             width: 360px;
           }
+          select{
+
+          }
+          .radio{
+            display: inline-block;
+            input{
+              width: 0;
+              height: 0;
+              visibility: hidden;
+              font-size: 0;
+              &:checked{
+                &~label{
+                  background-position: 0 0;
+                }
+              }
+            }
+            label{
+              padding-left: 21px;
+              background: url(../images/icon/ico-check.png) no-repeat 0 -21px;
+              margin-right: 45px;
+            }
+          }
           .domain-tip{
             position: absolute;
             right: 18px;
             color: #999;
             top: 0px;
+          }
+          .tip{
+            float: right;
+            font-size: 24px;
           }
         }
       }
