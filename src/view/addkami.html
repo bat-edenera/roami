@@ -1,4 +1,4 @@
-<!-- webpack-roami -->
+<!-- webpack-roami 添加卡密-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,21 +16,39 @@
 				<div class="title">添加卡密 <span>Add a secret</span></div>
 				<form action="" class="clearfix">
           <div class="item clearfix">
-            <span class="left">登陆密码</span>
+            <span class="left">商品名称</span>
             <div class="right">
-							<input type="text">
+							<select name="" id="">
+								<option value="">请选择商品</option>
+							</select>
+							<div class="info-tip">格式：卡号+空格+密码，一行一张卡，如：A1B2C3D4F5E8 9876543210</div>
 						</div>
 					</div>
 					<div class="item clearfix">
-						<span class="left">安全密码</span>
+						<span class="left">添加方式</span>
 						<div class="right">
-							<input type="text">
+							<div class="radio">
+								<input type="radio" name="store" checked id="a1">
+								<label for="a1">使用TXT文件导入</label>
+							</div>
+							<div class="radio">
+								<input type="radio" name="store" id="a2">
+								<label for="a2">使用输入框添加</label>
+							</div>
 						</div>
 					</div>
 					<div class="item clearfix">
-						<span class="left">重新输入安全密码</span>
+						<span class="left">商品名称</span>
 						<div class="right">
-							<input type="text">
+							<textarea name="" id="" cols="30" rows="10">158885773</textarea>
+							<div class="info-tip">
+								输入框添加卡密最多一次添加500张(500行)，TXT文件上传最多支持100KB。
+								<div class="radio">
+									<input type="checkbox" name="" id="c1" checked>
+									<label for="c1">检查重复的卡密(选中后表示重复的卡密将不会加入库存中)</label>
+								</div>
+
+							</div>
 						</div>
 					</div>
 					<div class="btn">

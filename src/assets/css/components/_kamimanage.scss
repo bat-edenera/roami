@@ -1,0 +1,57 @@
+.kamimanage{
+  .bar{
+    padding-bottom: 13px;
+    font-size: 14px;
+    button{
+      width: 120px;
+      height: 36px;
+      transition: .2s ease;
+      color: #fff;
+      margin-right: 10px;
+      border-radius: 4px;
+      font-size: 14px;
+      i{
+        vertical-align: sub;
+        margin-right: 5px;
+        font-size: 22px;
+      }
+      &.btn1{
+        background: $blue;
+        &:hover{
+          background: $dark;
+        }
+      }
+      &.btn2{
+        background: $orange;
+        &:hover{
+          background: $odark;
+        }
+      }
+    }
+    select,input{
+      margin-right: 8px;
+      float: left;
+      display: inline-block;
+      height: 36px;
+      line-height: 34px;
+      border: 1px solid $bd;
+      padding-left: 16px;
+      border-radius: 4px;
+      width: 126px;
+      &:focus{
+        border-color: $blue;
+        box-shadow: 0 0 8px 0 rgba(64,159,255,.4);
+      }
+    }
+    input{
+      width: 180px;
+    }
+  }
+  .table{
+    table{
+      td{
+        padding-left: 48px !important;
+      }
+    }
+  }
+}

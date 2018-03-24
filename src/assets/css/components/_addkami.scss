@@ -1,27 +1,25 @@
 .addkami{
   .b1{
     form{
-      width: 610px;
-      margin: 0 auto;
-      padding-top: 15px;
+      width: 100%;
+      padding: 20px 20px 0;
       .item{
         margin-bottom: 20px;
         line-height: 40px;
-        height: 40px;
+        // height: 40px;
         font-size: 13px;
         color: #666;
         .left{
           float: left;
-          width: 110px;
+          width: 55px;
           text-align: right;
           span{
             color: #ff3333;
           }
         }
         .right{
-          width: 423px;
-          float: left;
-          padding-left: 23px;
+          width: 100%;
+          padding-left: 80px;
           position: relative;
           .info{
             padding-left: 15px;
@@ -34,11 +32,17 @@
             border: 1px solid $bd;
             padding-left: 16px;
             border-radius: 4px;
-            width: 400px;
+            width: 100%;
+          }
+          textarea{
+            resize: none;
+            line-height: normal;
+            padding: 10px 15px;
+            height: 371px;
           }
           select{
             -webkit-appearance: none;
-            background: url(../images/icon/ico-arrow.png) no-repeat 95% 50%;
+            background: url(../images/icon/ico-arrow.png) no-repeat 98% 50%;
           }
           .radio{
             display: inline-block;
@@ -57,6 +61,19 @@
               padding-left: 21px;
               background: url(../images/icon/ico-check.png) no-repeat 0 -21px;
               margin-right: 45px;
+            }
+          }
+          .info-tip{
+            color: $orange;
+            font-size: 12px;
+            padding:0 25px;
+            line-height: 26px;
+            .radio{
+              float: right;
+            }
+            label{
+              color: #666;
+              margin-right: 0;
             }
           }
           .domain-tip{

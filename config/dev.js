@@ -39,7 +39,7 @@ app.use(devHotMiddleware)
 // serve pure static assets
 // var staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory)
 // app.use(staticPath, express.static('./static'))
-var page = '/addkami.html'
+var page = '/payway.html'
 var uri = 'http://localhost:' + port + page;
 
 var _resolve

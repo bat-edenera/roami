@@ -1,0 +1,75 @@
+.link{
+  .b1{
+    .content{
+      padding: 8px 20px;
+      .t1{
+        line-height: 36px;
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 10px;
+        img{
+          vertical-align: sub;
+        }
+        button{
+          width: 120px;
+          height: 36px;
+          transition: .2s ease;
+          color: #fff;
+          margin-left: 10px;
+          border-radius: 4px;
+          font-size: 14px;
+          i{
+            vertical-align: sub;
+            margin-right: 8px;
+            font-size: 18px;
+            &.ico-restore{
+              vertical-align: middle;
+              font-size: 25px;
+            }
+          }
+          &.btn1{
+            background: $blue;
+            &:hover{
+              background: $dark;
+            }
+          }
+          &.btn2{
+            background: #ea2b3b;
+            &:hover{
+              background: #d81e2e;
+            }
+          }
+        }
+      }
+      .info{
+        margin-bottom: 20px;
+        padding: 8px 20px;
+        background: #f5f7fa;
+        font-size: 14px;
+        color: #666;
+        p{
+          line-height: 36px;
+          .link{
+            color: $orange;
+            background: none;
+          }
+          span.btn{
+            cursor: pointer;
+            margin-left: 4px;
+            &:hover{
+              color: $orange;
+            }
+          }
+        }
+      }
+      .tip{
+        font-size: 14px;
+        line-height: 55px;
+        color: #666;
+        a{
+          color: $orange;
+        }
+      }
+    }
+  }
+}

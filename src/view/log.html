@@ -1,0 +1,45 @@
+<!-- webpack-roami 登陆日志-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>新创自动发卡平台</title>
+</head>
+<body>
+	#include("./widget/header.html")
+	<div class="main clearfix">
+		#include("./widget/sidebar.html")
+		<div class="container link scroll">
+			<div class="box init b1">
+        <div class="title">总购链接<span>Total purchase link</span> 
+        </div>
+        <div class="content">
+          <div class="t1">文字链接：</div>
+          <div class="info">
+            <p>
+              购买链接： 
+              <input style="width:298px;" class="link" id="link1" value="http://957ka.com/links/3CA34FC2C66B3C00"/>
+              <span class="btn" data-clipboard-target="#link1">复制</span>
+            </p>
+            <p>
+               短&nbsp;链&nbsp;接： 
+              <input id="link2" style="width:152px;" class="link" value="http://suo.im/2Y8qmb" />
+              <span class="btn" data-clipboard-target="#link2">复制</span>
+            </p>
+          </div>
+          <div class="t1">链接状态：
+            <img src="../assets/images/icon/ico-ok.png" alt="">
+            <button class="btn1"><i class="xcFont ico-switch"></i>关闭链接</button>
+            <button class="btn2"><i class="xcFont ico-reload"></i>重置链接</button>
+          </div>
+          <div class="tip">
+             链接说明：商品和分类的独立链接在<a href="">商品分类</a> 和<a href="">商品列表</a>中获取！
+          </div>
+        </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
