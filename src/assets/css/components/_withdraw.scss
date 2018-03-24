@@ -1,0 +1,23 @@
+.withdraw{
+  .b1{
+    .none-box{
+      padding-top: 160px;
+      text-align: center;
+      img{
+        margin-bottom: 36px;
+      }
+      p{
+        font-size: 14px;
+        color: #666;
+        line-height: 26px;
+        span.money{
+          color: #ff4040;
+        }
+        &.t1{
+          font-size: 12px;
+          color: #999;
+        }
+      }
+    }
+  }
+}

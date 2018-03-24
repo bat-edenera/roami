@@ -1,0 +1,94 @@
+.safety{
+  .b1{
+    form{
+      width: 610px;
+      margin: 0 auto;
+      padding-top: 15px;
+      .item{
+        margin-bottom: 20px;
+        line-height: 40px;
+        height: 40px;
+        font-size: 13px;
+        color: #666;
+        .left{
+          float: left;
+          width: 110px;
+          text-align: right;
+          span{
+            color: #ff3333;
+          }
+        }
+        .right{
+          width: 423px;
+          float: left;
+          padding-left: 23px;
+          position: relative;
+          .info{
+            padding-left: 15px;
+            display: inline-block;
+          }
+          input[type=text],select,textarea{
+            display: inline-block;
+            height: 40px;
+            line-height: 38px;
+            border: 1px solid $bd;
+            padding-left: 16px;
+            border-radius: 4px;
+            width: 400px;
+          }
+          select{
+            -webkit-appearance: none;
+            background: url(../images/icon/ico-arrow.png) no-repeat 95% 50%;
+          }
+          .radio{
+            display: inline-block;
+            input{
+              width: 0;
+              height: 0;
+              visibility: hidden;
+              font-size: 0;
+              &:checked{
+                &~label{
+                  background-position: 0 0;
+                }
+              }
+            }
+            label{
+              padding-left: 21px;
+              background: url(../images/icon/ico-check.png) no-repeat 0 -21px;
+              margin-right: 45px;
+            }
+          }
+          .domain-tip{
+            position: absolute;
+            right: 18px;
+            color: #999;
+            top: 0px;
+          }
+          .tip{
+            float: right;
+            i{
+              font-size: 24px;
+            }
+          }
+        }
+      }
+      .btn{
+        text-align: center;
+        button{
+          width: 120px;
+          height: 36px;
+          border-radius: 6px;
+          margin: 70px 8px 0;
+          transition: .3s ease;
+          &.t1{
+            color: #fff;background: $blue;
+            &:hover{
+              background: $dark;
+            }
+          }
+        }
+      }
+    }
+  }
+}

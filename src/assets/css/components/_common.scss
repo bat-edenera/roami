@@ -1,10 +1,13 @@
 body{
 	font-family: 'microsoft yahei',Arial, Helvetica, sans-serif;
-	background: #eaeef3;
+  background: #eaeef3;
+  color: #333;
 }
 $bd:#e3e5eb;
 $blue:#409fff;
 $dark:#2b8aea;
+$orange:#ff7f00;
+$odark:#f27a04;
 .clearfix{
   zoom:1;
   &:after{

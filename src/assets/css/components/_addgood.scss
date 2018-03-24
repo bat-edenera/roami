@@ -1,8 +1,7 @@
-.userinfo{
+.addgood{
   .b1{
-    
     form{
-      width: 1020px;
+      width: 1120px;
       .item{
         margin-bottom: 13px;
         float: left;
@@ -11,21 +10,8 @@
         height: 34px;
         font-size: 13px;
         color: #666;
-        &.block{
-          float: none;
-          width: 100%;
-          .right{
-            width: 898px;
-            textarea{
-              display: block;
-              width: 100%;
-              resize: none;
-              height: 70px;
-              line-height: normal;
-              padding-top: 8px;
-              padding-right: 10px;
-            }
-          }
+        &.grid{
+          height: 58px;
         }
         .left{
           float: left;
@@ -36,7 +22,8 @@
           }
         }
         .right{
-          width: 382px;
+          font-size: 12px;
+          width: 410px;
           float: left;
           padding-left: 22px;
           position: relative;
@@ -44,20 +31,27 @@
             padding-left: 15px;
             display: inline-block;
           }
-          .info-tip{
-            color: $orange;
-            font-size: 12px;
-            padding-left: 25px;
-            line-height: 26px;
-          }
           input[type=text],select,textarea{
             display: inline-block;
             height: 34px;
             line-height: 32px;
             border: 1px solid $bd;
-            padding-left: 16px;
+            padding-left: 14px;
             border-radius: 4px;
-            width: 360px;
+            width: 388px;
+          }
+          .ext{
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 34px;
+            width: 38px;
+            font-size: 14px;
+            color: #4c4c4c;
+            background: #f0efef;
+            border: 1px solid #c3c2c2;
+            text-align: center;
+            border-radius: 0 4px 4px 0;
           }
           select{
             -webkit-appearance: none;
@@ -82,11 +76,38 @@
               margin-right: 45px;
             }
           }
+          .select{
+            .f{
+              display: inline-block;
+              input{
+                width: 0;
+                height: 0;
+                visibility: hidden;
+                font-size: 0;
+                &:checked{
+                  &~label{
+                    background-position: 0 0;
+                  }
+                }
+              }
+              label{
+                padding-left: 21px;
+                background: url(../images/icon/ico-check.png) no-repeat 0 -21px;
+                margin-right: 45px;
+              }
+            }
+          }
           .domain-tip{
             position: absolute;
             right: 18px;
             color: #999;
             top: 0px;
+          }
+          .info-tip{
+            color: $orange;
+            font-size: 12px;
+            padding-left: 25px;
+            line-height: 26px;
           }
           .tip{
             float: right;
@@ -96,48 +117,21 @@
           }
         }
       }
-      &.form2{
-        .item{
-          .right{
-            input{
-              color: #333333;
-            }
-          }
-        }
-      }
-      &.change{
-        .item{
-          .right{
-            input{
-              pointer-events: none;
-              border: none;
-            }
-          }
-        }
-      }
     }
     .btn{
       width: 1020px;
       text-align: center;
       button{
+        font-size: 14px;
         width: 120px;
         height: 36px;
         border-radius: 6px;
-        margin: 10px 8px 0;
+        margin: 75px 8px 0;
         transition: .3s ease;
         &.t1{
           color: #fff;background: $blue;
           &:hover{
             background: $dark;
-          }
-        }
-        &.t2{
-          background: #fff;
-          border: 1px solid $blue;
-          color: $blue;
-          &:hover{
-            color: #fff;
-            background: $blue;
           }
         }
       }

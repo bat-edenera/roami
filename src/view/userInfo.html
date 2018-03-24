@@ -12,103 +12,128 @@
 	<div class="main clearfix">
 		#include("./widget/sidebar.html")
 		<div class="container userinfo scroll">
-			<div class="box b1">
+			<div class="box init b1">
 				<div class="title">用户信息<span>User information</span></div>
-				<div class="subtitle">商户基本信息</div>
 				<form action="" class="clearfix">
-					<div class="item clearfix">
-						<span class="left">商户编号</span>
-						<div class="right"><span class="info"> 10000</span></div>
-					</div>
-					<div class="item clearfix">
-						<span class="left">商户名</span>
-						<div class="right"><span class="info">wx134520</span> </div>
-					</div>
-					<div class="item clearfix">
-						<span class="left">电子邮箱</span>
-						<div class="right"><span class="info">158885773@qq.com</span> </div>
-					</div>
-					<div class="item clearfix">
-						<span class="left"><span>*&nbsp;</span>手机号码</span>
-						<div class="right"><input type="text" value="15305590273"></div>
-					</div>
-					<div class="item clearfix">
-						<span class="left">
-							<span>*&nbsp;</span>商户QQ</span>
-						<div class="right">
-							<input type="text" value="158885773">
+					<div class="subtitle">商户基本信息</div>
+						<div class="item clearfix">
+							<span class="left">商户编号</span>
+							<div class="right"><span class="info"> 10000</span></div>
 						</div>
-					</div>
-					<div class="item clearfix">
-						<span class="left">
-							<span>*&nbsp;</span>店铺名称</span>
-						<div class="right">
-							<input type="text" placeholder="给您的店铺起一个响亮的名字">
+						<div class="item clearfix">
+							<span class="left">商户名</span>
+							<div class="right"><span class="info">wx134520</span> </div>
 						</div>
-					</div>
-					<div class="item clearfix">
-						<span class="left">站点网址</span>
-						<div class="right">
-							<input type="text" value="绿色发卡网 购买辅助联系在线客服">
+						<div class="item clearfix">
+							<span class="left">电子邮箱</span>
+							<div class="right"><span class="info">158885773@qq.com</span> </div>
 						</div>
-					</div>
-					<div class="item clearfix">
-						<span class="left">设置店铺域名</span>
-						<div class="right">
-							<input type="text" value="">
-							<div class="domain-tip">.957ka.com</div>
+						<div class="item clearfix">
+							<span class="left"><span>*&nbsp;</span>手机号码</span>
+							<div class="right"><input type="text" value="15305590273"></div>
 						</div>
-					</div>
-					<div class="item clearfix">
-						<span class="left">库存显示</span>
-						<div class="right">
-							<div class="radio">
-								<input type="radio" name="store" checked id="r1">
-								<label for="r1">实际库存数量</label>
+						<div class="item clearfix">
+							<span class="left">
+								<span>*&nbsp;</span>商户QQ</span>
+							<div class="right">
+								<input type="text" value="158885773">
 							</div>
-							<div class="radio">
-								<input type="radio" name="store" id="r2">
-								<label for="r2">现实库存范围</label>
+						</div>
+						<div class="item clearfix">
+							<span class="left">
+								<span>*&nbsp;</span>店铺名称</span>
+							<div class="right">
+								<input type="text" placeholder="给您的店铺起一个响亮的名字">
 							</div>
-							<a href="" class="tip">
-								<i class="xcFont ico-tip"></i>
-							</a>
 						</div>
+						<div class="item clearfix">
+							<span class="left">站点网址</span>
+							<div class="right">
+								<input type="text" value="绿色发卡网 购买辅助联系在线客服">
+							</div>
+						</div>
+						<div class="item clearfix">
+							<span class="left">设置店铺域名</span>
+							<div class="right">
+								<input type="text" value="">
+								<div class="domain-tip">.957ka.com</div>
+							</div>
+						</div>
+						<div class="item clearfix">
+							<span class="left">库存显示</span>
+							<div class="right">
+								<div class="radio">
+									<input type="radio" name="store" checked id="r1">
+									<label for="r1">实际库存数量</label>
+								</div>
+								<div class="radio">
+									<input type="radio" name="store" id="r2">
+									<label for="r2">现实库存范围</label>
+								</div>
+								<a href="" class="tip">
+									<i class="xcFont ico-tip"></i>
+								</a>
+							</div>
+						</div>
+						<div class="item clearfix">
+							<span class="left">购买联系方式</span>
+							<div class="right">
+								<select name="connect">
+									<option value="">任意字符</option>
+								</select>
+							</div>
+						</div>
+						<div class="item clearfix">
+							<span class="left">支付页面</span>
+							<div class="right">
+								<select name="connect">
+									<option value="">系统默认</option>
+								</select>
+							</div>
+						</div>
+						<div class="item clearfix">
+							<span class="left">再次付款</span>
+							<div class="right">
+								<select name="connect">
+									<option value="">白色风格</option>
+								</select>
+							</div>
+						</div>
+						<div class="item clearfix block">
+							<span class="left">商家公告</span>
+							<div class="right">
+							<textarea name="">绿色发卡网 购买辅助联系在线客服</textarea>
+							<div class="info-tip">此公告将显示到您所有的商品页面上（适合填写售后QQ，客服QQ群）</div>
+							</div>
+						</div>
+				</form>
+				<form action="" class="form2 clearfix change">
+					<div class="subtitle clearfix">商户收款信息</div>
+					<div class="item clearfix ">
+						<span class="left">收款方式</span>
+						<div class="right"><input type="text" value=" 支付宝收款"></span></div>
 					</div>
 					<div class="item clearfix">
-						<span class="left">购买联系方式</span>
-						<div class="right">
-							<select name="connect">
-								<option value="">任意字符</option>
-							</select>
-						</div>
+						<span class="left">收款人姓名</span>
+						<div class="right"><input type="text" value=" wx134520"></span></div>
 					</div>
 					<div class="item clearfix">
-						<span class="left">支付页面</span>
-						<div class="right">
-							<select name="connect">
-								<option value="">系统默认</option>
-							</select>
-						</div>
+						<span class="left">收款账号</span>
+						<div class="right"><input type="text" value=" 158889763@qq.com"></span></div>
 					</div>
 					<div class="item clearfix">
-						<span class="left">再次付款</span>
-						<div class="right">
-							<select name="connect">
-								<option value="">白色风格</option>
-							</select>
-						</div>
+						<span class="left">收款二维码</span>
+						<div class="right"><input type="text" value=" 二维码更新，请重新上传二维码。"></span></div>
 					</div>
-					<div class="item clearfix block">
-						<span class="left">商家公告</span>
-						<div class="right">
-						<textarea name="">绿色发卡网 购买辅助联系在线客服</textarea>
-						<div class="info-tip">此公告将显示到您所有的商品页面上（适合填写售后QQ，客服QQ群）</div>
-						</div>
+					<div class="item clearfix">
+						<span class="left">身份证号</span>
+						<div class="right"><input type="text" value=" 3701****1111"></span></div>
 					</div>
 				</form>
-				<div class="subtitle">商户收款信息</div>
-
+				<div class="btn">
+					<button class="t1">保存设置</button>
+					<button class="t2">修改收款信息</button>
+				</div>
 			</div>
 		</div>
 	</div>

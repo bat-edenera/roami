@@ -1,0 +1,75 @@
+<!-- webpack-roami -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>新创自动发卡平台</title>
+</head>
+<body>
+	#include("./widget/header.html")
+	<div class="main clearfix">
+		#include("./widget/sidebar.html")
+		<div class="container safety scroll">
+			<div class="box init b1">
+				<div class="title">安全设置 <span>security settings</span></div>
+				<div class="subtitle">初始化安全设置</div>
+				<form action="" class="clearfix">
+          <div class="item clearfix">
+            <span class="left">登陆密码</span>
+            <div class="right">
+							<input type="text">
+						</div>
+					</div>
+					<div class="item clearfix">
+						<span class="left">安全密码</span>
+						<div class="right">
+							<input type="text">
+						</div>
+					</div>
+					<div class="item clearfix">
+						<span class="left">重新输入安全密码</span>
+						<div class="right">
+							<input type="text">
+						</div>
+					</div>
+					<div class="item clearfix">
+						<span class="left">选择问题</span>
+						<div class="right">
+								<select name="connect">
+									<option value="">不选择问题</option>
+								</select>
+						</div>
+					</div>
+					<div class="item clearfix">
+						<span class="left">问题答案</span>
+						<div class="right">
+							<input type="text">
+						</div>
+					</div>
+					<div class="item clearfix">
+						<span class="left">唯一登陆</span>
+						<div class="right">
+								<div class="radio">
+									<input type="radio" name="store" checked id="r1">
+									<label for="r1">开启</label>
+								</div>
+								<div class="radio">
+									<input type="radio" name="store" id="r2">
+									<label for="r2">关闭</label>
+								</div>
+								<a href="" class="tip">
+									<i class="xcFont ico-tip"></i>
+								</a>
+						</div>
+					</div>
+					<div class="btn">
+						<button class="t1">保存设置</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+.addcate{
+  .b1{
+    .table{
+      table{
+        td{
+          input{
+            height: 36px;
+            display: inline-block;
+            border: 1px solid #c8c8c8;
+            padding-left: 14px;
+            border-radius: 4px;
+            &.name{
+              width: 492px;
+            }
+            &.sort{
+              width: 154px;
+            }
+            &:focus{
+              border-color: $blue;
+              box-shadow: 0 0 8px 0 rgba(64,159,255,.4);
+            }
+          }
+        }
+      }
+      .btn{
+        padding-top: 15px;
+        padding-left: 18px;
+        button{
+          width: 120px;
+          height: 36px;
+          transition: .2s ease;
+          color: #fff;
+          margin-right: 10px;
+          border-radius: 4px;
+          font-size: 14px;
+          i{
+            vertical-align: sub;
+            margin-right: 5px;
+            font-size: 20px;
+            &.ico-add{
+              font-size: 24px;
+            }
+          }
+          &.btn1{
+            background: $blue;
+            &:hover{
+              background: $dark;
+            }
+          }
+          &.btn2{
+            background: $orange;
+            &:hover{
+              background: $odark;
+            }
+          }
+        }
+      }
+    }
+  }
+}
