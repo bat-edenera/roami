@@ -11,31 +11,89 @@
 	#include("./widget/header.html")
 	<div class="main clearfix">
 		#include("./widget/sidebar.html")
-		<div class="container link scroll">
+		<div class="container order scroll">
 			<div class="box init b1">
-        <div class="title">总购链接<span>Total purchase link</span> 
+        <div class="title">订单交易 <span>Order transaction </span> 
         </div>
-        <div class="content">
-          <div class="t1">文字链接：</div>
-          <div class="info">
-            <p>
-              购买链接： 
-              <input style="width:298px;" class="link" id="link1" value="http://957ka.com/links/3CA34FC2C66B3C00"/>
-              <span class="btn" data-clipboard-target="#link1">复制</span>
-            </p>
-            <p>
-               短&nbsp;链&nbsp;接： 
-              <input id="link2" style="width:152px;" class="link" value="http://suo.im/2Y8qmb" />
-              <span class="btn" data-clipboard-target="#link2">复制</span>
-            </p>
+        <div class="table">
+          <div class="bar clearfix">
+            <span class="t1">开始日期：</span>
+            <select name="" id="" class="time">
+              <option value="">2018-2-16</option>
+              <option value="">2018-2-17</option>
+              <option value="">2018-2-18</option>
+            </select>
+            <span class="t1">结束日期：</span>
+            <select name="" id="" class="time">
+              <option value="">2018-2-26</option>
+              <option value="">2018-2-26</option>
+              <option value="">2018-2-26</option>
+            </select>
+            <span class="t1">支付状态：</span>
+            <select name="" id="" class="type">
+              <option value="">全部</option>
+              <option value="">分类2</option>
+              <option value="">分类3</option>
+            </select>
+            <span class="t1">支付类型：</span>
+            <select name="" id="" class="type">
+              <option value="">请选择</option>
+              <option value="">分类2</option>
+              <option value="">分类3</option>
+            </select>
           </div>
-          <div class="t1">链接状态：
-            <img src="../assets/images/icon/ico-ok.png" alt="">
-            <button class="btn1"><i class="xcFont ico-switch"></i>关闭链接</button>
-            <button class="btn2"><i class="xcFont ico-reload"></i>重置链接</button>
+          <div class="bar clearfix">
+            <span class="t1">商品分类：</span>
+            <select name="" id="">
+              <option value="">全部分类</option>
+              <option value="">全部分类2</option>
+              <option value="">全部分类3</option>
+            </select>
+            <span class="t1">查询类别：</span>
+            <select name="" id="">
+              <option value="">订单号</option>
+              <option value="">订单号2</option>
+              <option value="">订单号3</option>
+            </select>
+            <input type="text" placeholder="订单号">
+            <button class="btn1">查询</button>
+            <button class="btn2">批量关闭未支付订单</button>
           </div>
-          <div class="tip">
-             链接说明：商品和分类的独立链接在<a href="">商品分类</a> 和<a href="">商品列表</a>中获取！
+          <table>
+            <thead>
+              <tr>
+                <td style="text-align:left;">订单编号</td>
+                <td style="text-align:left;">交易时间</td>
+                <td>商品名称</td>
+                <td style="text-align:left;">支付方式</td>
+                <td>金额</td>
+                <td>购买者信息</td>
+                <td>状态</td>
+                <td>管理</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align:left;"><span class="blue">F77B5702FAD08A7E</span> </td>
+                <td style="text-align:left;">2018-03-15 16:08:05</td>
+                <td>123（<span class="red">1</span> 张）</td>
+                <td style="text-align:left;">微信扫码</td>
+                <td>1.00</td>
+                <td>18955940273</td>
+                <td>
+                  <span class="state state1">已付款</span>
+                </td>
+                <td>
+                  <span class="state state2">关</span>
+                  <span class="state state1">导</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="pagination">
+            <p class="right">
+              本页：<span class="blue">0</span>条数据&nbsp;&nbsp;&nbsp;总共：<span class="blue">0</span>条数据
+            </p>
           </div>
         </div>
 			</div>

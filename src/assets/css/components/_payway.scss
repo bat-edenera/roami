@@ -1,0 +1,22 @@
+.payway.container{
+  .b1{
+    .table{
+      table{
+        td{
+          padding-left: 50px;
+          i{
+            color: #d2d2d2;
+            font-size: 20px;
+          }
+        }
+        tr.checked{
+          td{
+            i{
+              color: $blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}

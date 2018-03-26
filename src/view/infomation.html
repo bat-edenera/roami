@@ -1,0 +1,60 @@
+<!-- webpack-roami 站内信息-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>新创自动发卡平台</title>
+</head>
+<body>
+	#include("./widget/header.html")
+	<div class="main clearfix">
+		#include("./widget/sidebar.html")
+		<div class="container infomation scroll">
+      <div class="box init b1">
+        <div class="title">站内信息<span>Station information</span> 
+        </div>
+        <div class="subtitle">收件箱-站内消息</div>
+        <div class="table">
+          <div class="bar">
+            <button class="btn1">收件箱</button>
+            <button class="btn2">发件箱</button>
+            <button class="btn2">写信消息</button>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <td>
+                  <input type="checkbox" id="c1">
+                  <label for="c1"></label>
+                </td>
+                <td>标题</td>
+                <td>发件人</td>
+                <td>时间</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="none">
+                <td>
+                  <input type="checkbox" id="c2">
+                  <label for="c2"></label>
+                </td>
+                <td>wx134520</td>
+                <td>管理员</td>
+                <td>2018-1-03-19</td>
+              </tr>
+            </tbody>
+          </table>
+          <button class="del">删除</button>
+          <div class="pagination">
+            <p class="right">
+              本页：<span class="blue">1</span>条数据&nbsp;&nbsp;&nbsp;总共：<span class="blue">1</span>条数据
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+	</div>
+</body>
+</html>

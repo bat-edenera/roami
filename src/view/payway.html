@@ -11,32 +11,72 @@
 	#include("./widget/header.html")
 	<div class="main clearfix">
 		#include("./widget/sidebar.html")
-		<div class="container link scroll">
+		<div class="container payway scroll">
 			<div class="box init b1">
-        <div class="title">总购链接<span>Total purchase link</span> 
+        <div class="title">付款方式<span>Payment method</span> 
         </div>
-        <div class="content">
-          <div class="t1">文字链接：</div>
-          <div class="info">
-            <p>
-              购买链接： 
-              <input style="width:298px;" class="link" id="link1" value="http://957ka.com/links/3CA34FC2C66B3C00"/>
-              <span class="btn" data-clipboard-target="#link1">复制</span>
-            </p>
-            <p>
-               短&nbsp;链&nbsp;接： 
-              <input id="link2" style="width:152px;" class="link" value="http://suo.im/2Y8qmb" />
-              <span class="btn" data-clipboard-target="#link2">复制</span>
-            </p>
-          </div>
-          <div class="t1">链接状态：
-            <img src="../assets/images/icon/ico-ok.png" alt="">
-            <button class="btn1"><i class="xcFont ico-switch"></i>关闭链接</button>
-            <button class="btn2"><i class="xcFont ico-reload"></i>重置链接</button>
-          </div>
-          <div class="tip">
-             链接说明：商品和分类的独立链接在<a href="">商品分类</a> 和<a href="">商品列表</a>中获取！
-          </div>
+        <div class="table">
+          <table>
+            <thead>
+              <tr>
+                <td style="text-align:left;">支付方式</td>
+                <td>商户费率</td>
+                <td>状态</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align:left;">财付通</td>
+                <td>98%</td>
+                <td><i class="xcFont ico-ok"></i></td>
+              </tr>
+              <tr>
+                <td style="text-align:left;">网上银行</td>
+                <td>98%</td>
+                <td><i class="xcFont ico-ok"></i></td>
+              </tr>
+              <tr class="checked">
+                <td style="text-align:left;">QQ钱包WAP</td>
+                <td>98%</td>
+                <td><i class="xcFont ico-ok"></i></td>
+              </tr>
+              <tr>
+                <td style="text-align:left;">京东扫码</td>
+                <td>98%</td>
+                <td><i class="xcFont ico-ok"></i></td>
+              </tr>
+              <tr>
+                <td style="text-align:left;">微信扫码</td>
+                <td>98%</td>
+                <td><i class="xcFont ico-ok"></i></td>
+              </tr>
+              <tr>
+                <td style="text-align:left;">微信公众号</td>
+                <td>98%</td>
+                <td><i class="xcFont ico-ok"></i></td>
+              </tr>
+              <tr>
+                <td style="text-align:left;">微信wap</td>
+                <td>98%</td>
+                <td><i class="xcFont ico-ok"></i></td>
+              </tr>
+              <tr>
+                <td style="text-align:left;">QQ扫码</td>
+                <td>98%</td>
+                <td><i class="xcFont ico-ok"></i></td>
+              </tr>
+              <tr>
+                <td style="text-align:left;">支付宝</td>
+                <td>98%</td>
+                <td><i class="xcFont ico-ok"></i></td>
+              </tr>
+              <tr>
+                <td style="text-align:left;">支付宝wap</td>
+                <td>98%</td>
+                <td><i class="xcFont ico-ok"></i></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 			</div>
 		</div>

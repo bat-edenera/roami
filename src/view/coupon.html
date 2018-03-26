@@ -1,4 +1,4 @@
-<!-- webpack-roami 收益统计-->
+<!-- webpack-roami 查优惠券-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,56 +11,46 @@
 	#include("./widget/header.html")
 	<div class="main clearfix">
 		#include("./widget/sidebar.html")
-		<div class="container income scroll">
-			<div class="box init b1">
-        <div class="title">收益统计 <span>Income statistics</span> 
+		<div class="container coupon scroll">
+      <div class="box init b1">
+        <div class="title">查优惠券  <span>Check coupons</span> 
         </div>
         <div class="table">
           <div class="bar">
+            <span class="t1">商品分类：</span>
             <select name="" id="">
               <option value="">全部分类</option>
               <option value="">全部分类2</option>
               <option value="">全部分类3</option>
             </select>
-            <span class="t1">开始日期：</span>
-            <select name="" id="" class="time">
-              <option value="">2018-2-16</option>
-              <option value="">2018-2-17</option>
-              <option value="">2018-2-18</option>
-            </select>
-            <span class="t1">结束日期：</span>
-            <select name="" id="" class="time">
-              <option value="">2018-2-26</option>
-              <option value="">2018-2-26</option>
-              <option value="">2018-2-26</option>
-            </select>
-            <span class="t1">支付类型：</span>
+            <span class="t1">状态：</span>
             <select name="" id="" class="type">
               <option value="">全部</option>
               <option value="">分类2</option>
               <option value="">分类3</option>
             </select>
-            <input type="text" placeholder="订单号">
-            <button class="btn1">查询</button>
-            <button class="btn2">批量导出</button>
+            <input type="text" placeholder="">
+            <button class="btn1">立即查询</button>
+            <button class="btn2">生成优惠券</button>
           </div>
           <table>
             <thead>
               <tr>
-                <td>商品名称</td>
-                <td>数量</td>
-                <td>进价</td>
+                <td style="text-align:left">优惠券号码</td>
+                <td style="text-align:left">绑定分类</td>
                 <td>面额</td>
-                <td>收入</td>
-                <td>利润</td>
-                <td>支付方式</td>
-                <td>下单时间</td>
+                <td>生成时间</td>
+                <td>有效期</td>
+                <td>管理</td>
+                <td>
+                  <input type="checkbox" id="c1">
+                  <label for="c1"></label>
+                </td>
               </tr>
             </thead>
             <tbody>
               <tr class="none">
-                <td>暂无记录</td>
-                <td></td>
+                <td style="text-align:left">暂无记录</td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -70,13 +60,14 @@
               </tr>
             </tbody>
           </table>
+          <button class="del">删除</button>
           <div class="pagination">
             <p class="right">
               本页：<span class="blue">0</span>条数据&nbsp;&nbsp;&nbsp;总共：<span class="blue">0</span>条数据
             </p>
           </div>
         </div>
-			</div>
+      </div>
 		</div>
 	</div>
 </body>

@@ -1,0 +1,36 @@
+.baike.container{
+  .box{
+    .table{
+      input[type=checkbox]{
+        width: 0;
+        height: 0;
+        visibility: hidden;
+        font-size: 0;
+        &:checked{
+          &~label{
+            background-position: 0 -18px;
+          }
+        }
+      }
+      label{
+        padding-left: 21px;
+        background: url(../images/icon/ico-check3.png) no-repeat 0 2px;
+      }
+      table{
+        td{
+          text-align: left;
+        }
+        tr.none{
+          td{
+            font-size: 14px;
+          }
+        }
+        tbody{
+          td{
+            border-bottom: 1px solid $bd;
+          }
+        }
+      }
+    }
+  }
+}

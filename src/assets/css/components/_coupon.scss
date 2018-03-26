@@ -1,4 +1,4 @@
-.order.container{
+.coupon.container{
   .bar{
     padding-bottom: 13px;
     font-size: 14px;
@@ -69,30 +69,22 @@
   }
   .box{
     .table{
-      table{
-        td{
-          .red{
-            color: #e63232;
-          }
-          .blue{
-            color: $blue;
-          }
-          .state{
-            display: inline-block;
-            padding: 5px 10px;
-            color: #fff;
-            font-size: 20px;
-            transform: scale(.5);
-            border-radius: 8px;
-            margin:0 -9px;
-            &.state1{
-              background: #27a41e;
-            }
-            &.state2{
-              background: $blue;
-            }
+      input[type=checkbox]{
+        width: 0;
+        height: 0;
+        visibility: hidden;
+        font-size: 0;
+        &:checked{
+          &~label{
+            background-position: 0 -18px;
           }
         }
+      }
+      label{
+        padding-left: 21px;
+        background: url(../images/icon/ico-check3.png) no-repeat 0 2px;
+      }
+      table{
         tr.none{
           td{
             font-size: 14px;
@@ -103,6 +95,24 @@
             border-bottom: 1px solid $bd;
           }
         }
+      }
+      button.del{
+        margin-top: 24px;
+        width: 64px;
+        height: 34px;
+        transition: .2s ease;
+        color: #fff;
+        border-radius: 4px;
+        font-size: 14px;
+        text-align: center;
+        background: #e4393c;
+        &:hover{
+          background: #d53033;
+        }
+      }
+      .pagination{
+        position: relative;
+        top: -45px;
       }
     }
   }

@@ -1,0 +1,71 @@
+<!-- webpack-roami 加优惠券-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>新创自动发卡平台</title>
+</head>
+<body>
+	#include("./widget/header.html")
+	<div class="main clearfix">
+		#include("./widget/sidebar.html")
+		<div class="container addcoupon scroll">
+			<div class="box init b1">
+        <div class="title">加优惠券  <span>coupons</span> 
+        </div>
+        <form action="" class="clearfix">
+          <div class="item clearfix">
+            <span class="left">折扣面额</span>
+            <div class="right first">
+              <input type="text" value="1">
+              <select name="" id="">
+                <option value="">元</option>
+              </select>
+            </div>
+          </div>
+          <div class="item clearfix">
+            <span class="left">生成数量</span>
+            <div class="right">
+              <input type="text" value="1">
+              <span class="ext">件</span>
+            </div>
+          </div>
+          <div class="item clearfix">
+            <span class="left">有效期</span>
+            <div class="right">
+              <select name="" id="">
+                <option value="">1天</option>
+              </select>
+            </div>
+          </div>
+          <div class="item clearfix">
+            <span class="left">绑定商品分类</span>
+            <div class="right">
+              <select name="" id="">
+                <option value="">全部</option>
+              </select>
+            </div>
+          </div>
+          <div class="item clearfix">
+            <span class="left">备注信息</span>
+            <div class="right">
+              <textarea name="" id=""></textarea>
+              <div class="select">
+                <div class="f">
+                  <input type="checkbox" name="info" id="c1">
+                  <label for="c1">添加完成后导出优惠券到文本txt</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn">
+            <button class="t1">保存设置</button>
+          </div>
+        </form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
