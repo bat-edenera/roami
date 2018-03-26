@@ -1,5 +1,5 @@
 var fs = require('fs');
-var size = 640,
+var size = 750,
 css_text = `html{
 	font-family: 'Microsoft YaHei',Arial,'宋体',sans-serif;
 	font-size:625%;
