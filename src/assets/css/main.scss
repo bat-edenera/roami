@@ -1,3 +1,7 @@
-@import 'components/common';
-@import 'reset.css';
+body{
+  font-size: .12rem;
+  background: #fff;
+}
+@import 'media';
+@import 'reset';
 @import 'components/home';
