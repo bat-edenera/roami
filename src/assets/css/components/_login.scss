@@ -1,0 +1,96 @@
+.login{
+  height: 100vh;
+  overflow-y: auto;
+  position: relative;
+  color: #fff;
+  padding: 0 .25rem;
+  background: url(../images/logbg.jpg) 50% 0/cover no-repeat;
+  .title {
+    font-size: .34rem;
+    line-height: 1.33rem;
+    text-align: center;
+    padding-bottom: .28rem;
+  }
+  form{
+    font-size: .26rem;
+    input{
+      width: 4rem;
+    }
+    input,select{
+      background: none;
+      -webkit-appearance: none;
+    }
+    input::-webkit-input-placeholder{
+      color: #ddd;
+    }
+    .item{
+      overflow: hidden;
+      height: 1.06rem;
+      line-height: 1.2rem;
+      border-bottom: 1px solid #ddd;
+      img{
+        vertical-align: middle;
+        &.a1{
+          width: .32rem;
+          margin-right: .24rem;
+        }
+        &.a2{
+          width: .22rem;
+          margin-right: .35rem;
+          margin-left: .12rem;
+        }
+        &.a3{
+          width: .28rem;
+          margin-right: .26rem;
+        }
+        &.a4{
+          width: .26rem;
+          &.a42{
+            width: .32rem;
+          }
+        }
+      }
+      .eye{
+        float: right;
+        padding-right: .08rem;
+        img{
+          &.hidden{
+            display: none;
+          }
+        }
+      }
+    }
+    button{
+      width: 100%;
+      height: .88rem;
+      line-height: .88rem;
+      font-size: .36rem;
+      background: #f90023;
+      margin-top: .82rem;
+      border-radius: .1rem;
+      letter-spacing: .2rem;
+    }
+    a{
+      font-size: .24rem;
+      line-height: .9rem;
+      &.right{
+        float: right;
+      }
+    }
+  }
+  .login-other{
+    padding-top: 3.78rem;
+    li{
+      float: left;
+      width: 33.3333%;
+      text-align: center;
+      img{
+        width: .88rem;
+      }
+      p{
+        font-size: .2rem;
+        padding-top: .2rem;
+      }
+    }
+  }
+}

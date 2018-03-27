@@ -36,5 +36,5 @@ input[type=submit],
 input[type=file],
 button {cursor: pointer;}
 
-button, input, select, textarea {margin: 0;padding: 0;border:none;outline: none;font:inherit "Microsoft YaHei",Arial,"宋体",sans-serif;color: inherit;}
+button, input, select, textarea {margin: 0;padding: 0;border:none;outline: none;font-size:inherit;font-family:"Microsoft YaHei",Arial,"宋体",sans-serif;color: inherit;}
 
