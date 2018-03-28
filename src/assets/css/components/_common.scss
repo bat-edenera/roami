@@ -1,0 +1,16 @@
+body{
+  font-size: .12rem;
+  min-height: 100vh;
+}
+.clearfix{
+  &:after{
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
+  color: #c2c2c2;
+}
