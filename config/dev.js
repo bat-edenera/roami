@@ -3,11 +3,11 @@ const webpack = require('webpack');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 const hotMiddleware = require('webpack-hot-middleware');
 var opn = require('opn')
-
 const app = express();
 const config = require('./webpack.dev.js');
 var port = 8080;
 const compiler = webpack(config);
+var page = '/index.html';
 
 // Tell express to use the webpack-dev-middleware and use the webpack.config.js
 // configuration file as a base.
@@ -40,7 +40,7 @@ app.use(devHotMiddleware)
 // var staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory)
 // app.use(staticPath, express.static('./static'))
 
-var uri = 'http://localhost:' + port
+var uri = 'http://localhost:' + port + page;
 
 var _resolve
 var readyPromise = new Promise(resolve => {
@@ -49,9 +49,9 @@ var readyPromise = new Promise(resolve => {
 
 console.log('> Starting dev server...')
 devMiddleware.waitUntilValid(() => {
-  console.log('> Listening at ' + uri + '\n')
+  console.log('> looking at ' + uri + '\n')
   // when env is testing, don't need open it
-  // opn(uri)
+  opn(uri)
   _resolve()
 })
 
