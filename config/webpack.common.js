@@ -6,7 +6,7 @@ const glob = require('glob');
 
 var confs = {
 	entry: {
-		jquery:"jquery",
+		// jquery:"jquery"
 	},
 	output: {
 		filename: 'js/[name][hash:4].js',
@@ -52,12 +52,12 @@ var confs = {
 			root:path.resolve(__dirname, '../'),
 		}),
 		new webpack.optimize.CommonsChunkPlugin({
-			name: ['common','jquery'],
+			// name: ['vendor','jquery'],
+			name:'vendor',
 			minChunks: function (module, count) {
-					// 指定范围是js文件来自node_modules
-					return (module.resource && /\.js$/.test(module.resource) &&module.resource.indexOf(path.join(__dirname, '../node_modules')) === 0);
-			}
-			// minChunks:2
+				// 指定范围是js文件来自node_modules
+				return (module.resource && /\.js$/.test(module.resource) &&module.resource.indexOf(path.join(__dirname, '../node_modules')) === 0 && count>2);
+			},
 		}),
 	]
 }
@@ -69,7 +69,7 @@ pages.forEach(key=>{
 		filename:path.resolve(__dirname,'../dist/'+key+'.html'),
 		template: './src/view/'+key+'.html',
 		inject: true,
-		chunks: ['jquery','common',key],
+		chunks: ['vendor',key],
 		// chunksSortMode: function (chunk1, chunk2) {
 		// 	var order = ['common', key];
 		// 	var order1 = order.indexOf(chunk1.names[0]);
