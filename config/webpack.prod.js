@@ -5,7 +5,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const common = require('./webpack.common.js');
 
 const extractCSS = new ExtractTextPlugin('css/common[contenthash:4].css');
-const extractSASS = new ExtractTextPlugin('css/[name][contenthash:4].css');
+const extractSASS = new ExtractTextPlugin('css/main[contenthash:4].css');
 module.exports = merge(common, {
 	devtool: "cheap-module-source-map",
 	module:{

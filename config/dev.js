@@ -51,7 +51,7 @@ console.log('> Starting dev server...')
 devMiddleware.waitUntilValid(() => {
   console.log('> Listening at ' + uri + '\n')
   // when env is testing, don't need open it
-  opn(uri)
+  // opn(uri)
   _resolve()
 })
 
