@@ -1,6 +1,15 @@
+$color:#9b2025;
+$dark:#91181d;
+$bd:#bbbbbb;
 body{
   font-size: .12rem;
   min-height: 100vh;
+  color: #333;
+  background: #fff;
+  .wrap{
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
 .clearfix{
   &:after{
