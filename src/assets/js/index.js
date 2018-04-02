@@ -1,2 +1,5 @@
-var html = require('../../view/index.html');
-console.log('index 欢迎你')
+import '../css/main.scss';
+// import swiper from 'swiper';
+$(function(){
+  console.log('index')
+})
