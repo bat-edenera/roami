@@ -1,11 +1,11 @@
-$color:#f84a56;
-$dark:#e73541;
-$bd:#eaeaea;
+$color:#4d7bfe;
+$dark:#4572f4;
+$bd:#e1e1e1;
 body{
   font-size: .12rem;
   min-height: 100vh;
-  background: #fff;
   color: #333;
+  background: #fff;
 }
 .clearfix{
   &:after{
