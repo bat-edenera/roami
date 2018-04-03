@@ -1,6 +1,17 @@
+$red: #d90033;
+$dark: #c60532;
+$bd:#e6e6e6;
+.red{
+  color: $red;
+}
 body{
+  background: #fff;
+  color: #333;
   font-size: .12rem;
-  min-height: 100vh;
+  .wrap{
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
 .clearfix{
   &:after{
