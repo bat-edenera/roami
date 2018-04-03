@@ -77,7 +77,7 @@ pages.forEach(key=>{
 		// 	return order1 - order2;
 		// },
 		minify: {
-			removeComments: true,
+			removeComments: false,
 			collapseWhitespace: false,
 			removeAttributeQuotes: false
 		},
