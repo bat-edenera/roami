@@ -40,7 +40,7 @@ app.use(devHotMiddleware)
 // var staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory)
 // app.use(staticPath, express.static('./static'))
 
-var uri = 'http://localhost:' + port
+var uri = 'http://localhost:' + port +'/mindex.html'
 
 var _resolve
 var readyPromise = new Promise(resolve => {
