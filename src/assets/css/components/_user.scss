@@ -1,0 +1,96 @@
+.user-page{
+  background: #f8f9fb;
+  .user{
+    padding-top: .6rem;
+    line-height: .96rem;
+    padding-left: .3rem;
+    font-size: 0.46rem;
+    font-weight: bold;
+    padding-bottom: .48rem;
+    img{
+      width: .96rem;
+      float: left;
+      margin-right: .27rem;
+    }
+  }
+  .info{
+    overflow: hidden;
+    padding: 0 .3rem .36rem;
+    .box{
+      width: 2.75rem;
+      height: 1.2rem;
+      background: #fff;
+      .t1{
+        font-size: .24rem;
+        line-height: .66rem;
+        span{
+          font-size: 0.34rem;
+          font-weight: bold;
+        }
+      }
+      .t2{
+        line-height: normal;
+        font-size: 0.22rem;
+        color: #5f687c;
+        img{
+          float: left;
+          height: .22rem;
+          vertical-align: sub;
+          position: relative;
+          top: .05rem;
+          margin-right: .12rem;
+        }
+      }
+    }
+    .left{
+      float: left;
+    }
+    .right{
+      float: right;
+    }
+  }
+  .list{
+    height: 6.49rem;
+    background: #fff;
+    position: relative;
+    ul{
+      padding: 0 .4rem;
+      li{
+        line-height: .9rem;
+        border-bottom: 1px solid $bd;
+        &:last-child{
+          border-bottom: none;
+        }
+        a{
+          overflow: hidden;
+          display: block;
+        }
+        .left{
+          float: left;
+          font-size: 0.28rem;
+          img{
+            width: .31rem;
+            position: relative;
+            top: .05rem;
+            margin-right: .12rem;
+          }
+        }
+        .right{
+          float: right;
+          img{
+            width: .12rem;
+          }
+        }
+      }
+    }
+    .logo{
+      position: absolute;
+      width: 100%;
+      bottom: .4rem;
+      text-align: center;
+      img{
+        width: 2.6rem;
+      }
+    }
+  }
+}

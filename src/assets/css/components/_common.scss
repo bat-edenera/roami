@@ -4,8 +4,41 @@ $bd:#e1e1e1;
 body{
   font-size: .12rem;
   min-height: 100vh;
-  color: #333;
+  color: #121c32;
   background: #fff;
+  width: 6.4rem;
+  margin: 0 auto;
+  .header{
+    height: .85rem;
+    background: #000;
+    color: #fff;
+    position: relative;
+    .left{
+      position: absolute;
+      left: .22rem;
+      height: .85rem;
+      line-height: .85rem;
+      font-size: 0.32rem;
+      img{
+        width: .21rem;
+        margin-right: .12rem;
+        vertical-align: sub;
+      }
+    }
+    p{
+      text-align: center;
+      font-size: .36rem;
+      line-height: .85rem;
+    }
+    .right{
+      position: absolute;
+      right: .4rem;
+      top: .25rem;
+      img{
+        width: .43rem;
+      }
+    }
+  }
 }
 .clearfix{
   &:after{
