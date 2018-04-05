@@ -30,7 +30,7 @@ var confs = {
 				test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
 				loader: 'url-loader',
 				options: {
-					limit: 512,
+					limit: 100,
 					name: "images/[name][hash:4].[ext]"
 				}
 			},
