@@ -1,5 +1,63 @@
 import '../css/main.scss';
 // import swiper from 'swiper';
 $(function(){
-  console.log('index')
+    console.log($('body').height())
+    var mycanvas = document.getElementsByTagName("canvas")[0];
+    var ctx = mycanvas.getContext("2d");
+    //动态获取窗口的大小
+    mycanvas.width = document.documentElement.clientWidth;
+    mycanvas.height = document.documentElement.clientHeight;
+    window.onresize = function(){
+        mycanvas.width = document.documentElement.clientWidth;
+        mycanvas.height = document.documentElement.clientHeight;
+    }
+    var BallsArr = [];
+    function Ball(x,y){
+        this.x = x;
+        this.y = y;
+        this.r = 30;
+        this.color = "rgba(" + parseInt(Math.random()*256)  + "," + parseInt(Math.random()*256)  + "," + parseInt(Math.random()*256)  + "," + 0.8;
+        this.dx = parseInt(Math.random() * 10) - 5;
+        this.dy = parseInt(Math.random() * 10) - 5;
+        BallsArr.push(this);
+    }
+    Ball.prototype.render = function(){
+        ctx.beginPath();
+        ctx.arc(this.x,this.y,this.r,0,Math.PI * 2,true);
+        ctx.closePath();
+        ctx.fillStyle = this.color;
+        ctx.fill();
+    }
+    Ball.prototype.update = function(){
+        this.x += this.dx;
+        this.y += this.dy;
+        this.r--;
+        if(this.r < 0){
+            this.godie();
+        }
+    }
+    Ball.prototype.godie = function(){
+        for (var i = 0; i < BallsArr.length; i++) {
+            if(BallsArr[i] == this){
+                BallsArr.splice(i,1);
+            }
+        };
+    }
+    mycanvas.onmousemove = function(event){
+        new Ball(event.clientX,event.clientY);
+    }
+    // 手指移动事件
+    mycanvas.addEventListener("touchmove",function(event){
+        event.preventDefault();
+        var finger = event.touches[0];
+        new Ball(finger.clientX,finger.clientY);
+    },true)
+
+    setInterval(function(){
+        ctx.clearRect(0,0,mycanvas.width,mycanvas.height);
+        for (var i = 0; i < BallsArr.length; i++) {
+            BallsArr[i] && BallsArr[i].render();
+            BallsArr[i].update();
+        };
+    },20)
 })
