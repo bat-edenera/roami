@@ -1,0 +1,307 @@
+.mindex{
+  width: 6.4rem;
+  margin: 0 auto;
+  .header{
+    height: .88rem;
+    z-index: 100;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0, .05);
+    .nav{
+      position: absolute;
+      left: .2rem;
+      top: 0.3rem;
+      img{
+        width: .36rem;
+      }
+    }
+    .service{
+      position: absolute;
+      top: .25rem;
+      right: .2rem;
+      width: .4rem;
+    }
+    .title{
+      display: inline-block;
+      text-align: left;
+      overflow: hidden;
+      color: $red;
+      .left{float: left;
+        padding-top: 0.14rem;
+        text-align: center;
+        font-size: 0.19rem;
+        a{display: block;
+        height: .39rem;}
+        img{
+          width: .39rem;
+          display: inline-block;
+        }
+      }
+      .right{
+        margin-left: 0.24rem;
+        padding-left: .24rem;
+        margin-top: 0.12rem;
+        border-left: 1px solid $red;
+        float: left;
+        p.t1{font-size: 0.26rem;font-weight: bold;}
+        p.t2{
+          font-size: 0.2rem;
+        }
+      }
+    }
+  }
+  .main-banner{
+    img{display: block;}
+    .swiper-pagination-bullets{
+      bottom: .08rem !important;
+    }
+    .swiper-pagination-bullet{
+      margin: 0 .03rem !important;
+      width: .15rem;
+      height: .03rem;
+      background: #fff;
+      border-radius: 0;
+      opacity: 1;
+      &.swiper-pagination-bullet-active{
+        width: .25rem;
+        background: $red;
+      }
+    }
+  }
+  .section{
+    &.bg{
+      background: #f2f2f2;
+    }
+    &.case{
+      padding-bottom: .5rem;
+    }
+    &.advantage{
+      padding-bottom: .4rem;
+    }
+    .title{
+      padding-top: .3rem;
+      text-align: center;
+      font-size: 0.28rem;
+      span{
+        color: $red;
+        font-size: .4rem;
+        font-weight: bold;
+        margin-right: .1rem;
+      }
+      p{
+        font-size: .16rem;
+        color: #666;
+        text-transform: uppercase;
+      }
+    }
+    .sub-banner{
+      padding-bottom: .6rem;
+      .swiper-slide{
+        padding-top: .3rem;
+        text-align: center;
+        .img{
+          position: relative;
+          img{
+            width: 2.5rem;
+            border-radius: 50%;
+          }
+          &:after{
+            content: '';
+            position: absolute;
+            top: 2.7rem;
+            width: .4rem;
+            height: .04rem;
+            background: $red;
+            border-radius: .02rem;
+            left: 3rem;
+          }
+        }
+        .info{
+          line-height: .32rem;
+          padding: .3rem .82rem .2rem;
+          font-size: 0.2rem;
+          color: #666;
+        }
+        .btn{
+          a{
+            display: inline-block;
+            width: 1.5rem;
+            height: .4rem;
+            color: #fff;
+            background: $red;
+            font-size: 0.2rem;
+            line-height: .4rem;
+          }
+        }
+      }
+      .swiper-button-next{
+        background: url(../images/icon/ico-arr.png) no-repeat 50% 50%;
+      }
+      .swiper-button-prev{
+        background: url(../images/icon/ico-arr.png) no-repeat 50% 50%;
+        transform: rotate(180deg);
+      }
+    }
+    .sub-banner2{
+      text-align: left;
+      padding: 0 .2rem .6rem;
+      .swiper-slide{
+        padding-top: .3rem;
+        .img{
+          img{
+            width: 6rem;
+          }
+        }
+       p.t1{
+         font-size: 0.24rem;
+         color: #333;
+         line-height: .76rem;
+       } 
+       p.t2{
+         font-size: .2rem;
+         color: #666;
+         padding-bottom: 0.2rem;
+         img{
+           width: .2rem;
+           float: left;
+           margin-right: .08rem;
+         }
+         &:last-child{
+           border-bottom: 1px solid #ddd;
+         }
+       }
+      }
+      .swiper-pagination-bullet-active{
+        background: $red;
+      }
+    }
+    .btn{
+      text-align: center;
+      a{
+        display: inline-block;
+        width: 1.5rem;
+        height: .4rem;
+        color: #fff;
+        background: $red;
+        font-size: 0.2rem;
+        line-height: .4rem;
+      }
+    }
+    ul.list1{
+      overflow: hidden;
+      padding: .3rem .05rem .1rem;
+
+      li{
+        text-align: left;
+        float: left;
+        width: 50%;
+        padding: 0 .05rem;
+        img{
+          width: 3.78rem;
+        }
+        p.t1{
+          padding-top: .1rem;
+          font-size: .24rem;
+          color: #333;
+        }
+        p.t2{
+          font-size: 0.2rem;
+          color: #666;
+          padding-bottom: .2rem;
+        }
+      }
+    }
+    ul.list2{
+      overflow: hidden;
+      padding: .3rem .07rem .1rem;
+      li{
+        text-align: left;
+        float: left;
+        width: 33.33333%;
+        padding: 0 .07rem .12rem;
+        img{
+          height: 2.27rem;
+          border: 1px solid #e5e5e5;
+          box-shadow: 0 3px 8px 0 rgba(0,0,0, .05);
+        }
+        p.t1{
+          padding-top: .1rem;
+          font-size: .24rem;
+          color: #333;
+        }
+        p.t2{
+          font-size: 0.2rem;
+          color: #666;
+          padding-bottom: .2rem;
+        }
+      }
+    }
+    ul.list3{
+      padding: 0 .2rem .4rem;
+      li{
+        padding: .3rem 0 ;
+        overflow: hidden;
+        border-bottom: 1px solid #ddd;
+        img{
+          float: left;
+          width: 2.4rem;
+        }
+        .info{
+          float: left;
+          width: 3.5rem;
+          padding-left: .12rem;
+          p.t1{
+            padding: .1rem 0 ;
+            font-size: .24rem;
+            color: #333;
+          }
+          p.t2{
+            font-size: 0.2rem;
+            color: #666;
+            padding-bottom: .2rem;
+          }
+        }
+      }
+    }
+    form{
+      padding: .3rem .2rem;
+      input,textarea{
+        width: 100%;
+        height: .41rem;
+        line-height: .38rem;
+        font-size: .22rem;
+        border: 1px solid #999;
+        margin-bottom: .3rem;
+        padding-left: .22rem;
+      }
+      textarea{
+        height: 1.85rem;
+        padding: .18rem .22rem;
+        line-height: 1.4;
+      }
+      button{
+        line-height: .6rem;color: #fff;
+        font-size: 0.3rem;
+        border-radius: .06rem;
+        background: $red;
+        width: 100%;
+      }
+    }
+  }
+  .footer{
+    padding: .3rem 0 .5rem;
+    background: #f2f2f2;
+    text-align: center;
+    font-size: 0.22rem;
+    line-height: .5rem;
+    color: #666;
+    img{
+      height: .3rem;
+      vertical-align: middle;
+    }
+    a{
+      color: #0072ff;
+      border-bottom: 1px solid;
+    }
+  }
+}
