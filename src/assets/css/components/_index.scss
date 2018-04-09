@@ -1,0 +1,65 @@
+.banner{
+  width: 100%;
+  height: 769px;
+  background: url(../images/banner.jpg) no-repeat 50% 50%;
+  .wrap{
+    position: relative;
+    .logo{
+      position: absolute;
+      top: 0;
+      left: -210px;
+    }
+  }
+}
+.container{
+  padding-top: 55px;
+  .title{
+    padding: 47px 0;
+    text-align: center;
+    .t1{
+      font-size: 30px;
+      display: inline-block;
+      width: 267px;
+      height: 51px;
+      line-height: 49px;
+      border: 1px solid #333;
+      border-radius: 8px;
+      span{
+        color: $color;
+      }
+      position: relative;
+      i{
+        width: 6px;
+        height: 6px;
+        position: absolute;
+        background: #333;
+        border-radius: 50%;
+        &.e1{
+          left: 12px;
+          top: 10px;
+        }
+        &.e2{
+          left: 12px;
+          bottom: 10px;
+        }
+        &.e3{
+          right: 12px;
+          bottom: 10px;
+        }
+        &.e4{
+          width: 42px;
+          height: 42px;
+          background: url(../images/icon/ico-pow.png) no-repeat 50% 50%;
+          top: -18px;
+          right: -18px;
+        }
+      }
+    }
+    .t2{
+      font-size: 14px;
+      line-height: 36px;
+      color: #ccc;
+      text-transform: uppercase;
+    }
+  }
+}

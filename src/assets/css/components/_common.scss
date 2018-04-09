@@ -1,5 +1,5 @@
-$color:#4d7bfe;
-$dark:#4572f4;
+$color:#e70012;
+$dark:#d40011;
 $bd:#e1e1e1;
 html{
   height: 100%;
@@ -9,6 +9,11 @@ body{
   height: 100%;
   color: #333;
   background: #fff;
+  min-width: 1200px;
+  .wrap{
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
 .clearfix{
   &:after{
@@ -21,4 +26,13 @@ body{
 }
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
   color: #c2c2c2;
+}
+//字体
+@font-face {
+	font-family: 'web';
+  src: url("./font/web.woff") format("woff");
+}
+.font-web {
+	font-family:"web";
+	color: inherit;
 }
