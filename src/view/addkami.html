@@ -28,18 +28,23 @@
 						<span class="left">添加方式</span>
 						<div class="right">
 							<div class="radio">
-								<input type="radio" name="store" checked id="a1">
+								<input class="chooseType" type="radio" name="store" checked id="a1" value="txt">
 								<label for="a1">使用TXT文件导入</label>
 							</div>
 							<div class="radio">
-								<input type="radio" name="store" id="a2">
+								<input type="radio" class="chooseType" name="store" id="a2" value="input">
 								<label for="a2">使用输入框添加</label>
 							</div>
 						</div>
 					</div>
-					<div class="item clearfix">
+					<div class="item clearfix ">
 						<span class="left">商品名称</span>
-						<div class="right">
+						<div class="right way1 j-way">
+							<input type="file" id="file" accept="text/plain">
+							<label class="upload" for="file">请选择文件</label>
+							<p>注意：上传的TXT文件最大100KB</p>
+						</div>
+						<div class="right way2 j-way" style="display:none;">
 							<textarea name="" id="" cols="30" rows="10">158885773</textarea>
 							<div class="info-tip">
 								输入框添加卡密最多一次添加500张(500行)，TXT文件上传最多支持100KB。

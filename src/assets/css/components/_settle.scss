@@ -1,5 +1,24 @@
 .settle{
   .b1{
-    
+    .table{
+      span.done{
+        display: inline-block;
+        width: 70px;
+        height: 24px;
+        border-radius: 4px;
+        text-align: center;
+        color: #fff;line-height: 24px;
+        background: $orange;
+      }
+      span.undo{
+        display: inline-block;
+        width: 70px;
+        height: 24px;
+        border-radius: 4px;
+        text-align: center;
+        color: #fff;line-height: 24px;
+        background: $blue;
+      }
+    }
   }
 }

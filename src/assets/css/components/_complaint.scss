@@ -10,5 +10,43 @@
         line-height: 2.1;
       }
     }
+    .table{
+      span.done{
+        display: inline-block;
+        padding: 0 10px;
+        height: 24px;
+        border-radius: 4px;
+        text-align: center;
+        color: #fff;line-height: 24px;
+        background: #d90f27;
+      }
+      span.todo{
+        padding: 0 10px;
+        display: inline-block;
+        height: 24px;
+        border-radius: 4px;
+        text-align: center;
+        color: #fff;line-height: 24px;
+        background: #5cb95c;
+      }
+      a.done{
+        display: inline-block;
+        padding: 0 10px !important;
+        height: 24px;
+        border-radius: 4px;
+        text-align: center;
+        color: #fff;line-height: 24px;
+        background: $orange;
+      }
+      a.todo{
+        padding: 0 10px !important;
+        display: inline-block;
+        height: 24px;
+        border-radius: 4px;
+        text-align: center;
+        color: #fff;line-height: 24px;
+        background: $blue;
+      }
+    }
   }
 }
