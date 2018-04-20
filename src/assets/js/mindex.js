@@ -31,3 +31,12 @@ var sub3 = new Swiper('.j-subSwiper3', {
     clickable: true,
   },
 })
+
+$(function(){
+  $('.j-nav').click(function(){
+    $('.j-navList').show();
+  })
+  $('.j-navList').on('click',function(){
+    $('.j-navList').hide();
+  })
+})

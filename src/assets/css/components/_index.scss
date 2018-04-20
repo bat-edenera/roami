@@ -1,6 +1,7 @@
 .mindex{
   width: 6.4rem;
   margin: 0 auto;
+  padding-bottom: 1rem;
   .header{
     height: .88rem;
     z-index: 100;
@@ -304,4 +305,66 @@
       border-bottom: 1px solid;
     }
   }
+  .navbar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: $red;
+    overflow: hidden;
+    z-index: 100;
+    a{
+      width: 33.3333%;
+      float: left;
+      line-height:.88rem;
+      color: #fff;
+      font-size: 0.24rem;
+      text-align: center;
+      border-left: 2px solid #fff;
+      &:first-child{
+        border-left: none;
+      }
+      img{
+        vertical-align: middle;
+        height: .36rem;
+        margin-left: 0.22rem;
+      }
+    }
+  }
+  .nav-list{
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      z-index: 99;
+      background: rgba(0,0,0,.2);
+      display: none;
+      z-index: 200;
+      ul{
+        background: #fff;
+        width: 4.5rem;
+        height: 100%;
+        padding: 1rem .6rem 0;
+        box-shadow:inset -10px 0px 20px 0 rgba(0,0,0, .1);
+      }
+      li{
+        line-height: .72rem;
+        a{
+          font-weight: lighter;
+          font-size: 0.24rem;
+          display: block;
+          color: #999;
+          &:hover,&.active{
+            color: $red;
+          }
+          span{
+            float: right;
+            font-size: .4rem;
+            line-height: .65rem;
+            font-weight: lighter;
+          }
+        }
+      }
+    }
 }
