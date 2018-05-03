@@ -1,6 +1,7 @@
 body{
 	font-family: 'microsoft yahei',Arial, Helvetica, sans-serif;
 	background: #fff;
+	overflow-x: hidden;
 }
 .header{
 	height: 100px;
@@ -101,6 +102,9 @@ body{
 				vertical-align: middle;
 			}
 		}
+	}
+	&.fixed{
+		position: fixed;
 	}
 }
 .main-banner{
@@ -409,7 +413,7 @@ body{
 								left: 0;
 								width: 100%;
 								height: 100%;
-								background: rgba(0,0,0,.4);
+								background:url(../images/icon/ico-link.png) no-repeat 50% 50% rgba(0,0,0,.4);
 								display: none;
 							}
 						}
@@ -713,12 +717,13 @@ body{
 }
 .sidebar{
 	position: fixed;
-	right: 0;
+	right: -111px;
 	top: 260px;
-	width: 60px;
+	width: 168px;
 	height: 300px;
 	background: #3f3f42;
 	z-index: 11;
+	transition: right .3s ease-in;
 	li{
 		cursor: pointer;
 		height: 60px;
@@ -730,25 +735,10 @@ body{
 		background: #3f3f42;
 		img{
 			vertical-align: middle;
-			margin: 0 20px;
+			margin: 0 20px 0 19px;
 		}
-		a{
-			position: absolute;
-			display: block;
-			border-bottom: 1px solid #8c8d8e;
-			padding:0 10px ;
-			white-space: nowrap;
-			line-height: 59px;
-			top: 0;
-			background: #3f3f42;
-			z-index: -1;
-			right: -100px;
-			transition: .3s ease;
-		}
-		&:hover{
-			a{
-				right: 60px;
-			}
-		}
+	}
+	&:hover{
+		right: 0;
 	}
 }

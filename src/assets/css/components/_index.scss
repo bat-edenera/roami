@@ -341,28 +341,32 @@
       background: rgba(0,0,0,.2);
       display: none;
       z-index: 200;
-      ul{
+      &>ul{
         background: #fff;
         width: 4.5rem;
         height: 100%;
         padding: 1rem .6rem 0;
         box-shadow:inset -10px 0px 20px 0 rgba(0,0,0, .1);
-      }
-      li{
-        line-height: .72rem;
-        a{
-          font-weight: lighter;
-          font-size: 0.24rem;
-          display: block;
-          color: #999;
-          &:hover,&.active{
-            color: $red;
-          }
-          span{
-            float: right;
-            font-size: .4rem;
-            line-height: .65rem;
+        li{
+          line-height: .72rem;
+          a{
             font-weight: lighter;
+            font-size: 0.24rem;
+            display: block;
+            color: #999;
+            &.active{
+              color: $red;
+            }
+            span{
+              float: right;
+              font-size: .4rem;
+              line-height: .65rem;
+              font-weight: lighter;
+            }
+          }
+          ul{
+            padding-left: .15rem;
+            display: none;
           }
         }
       }

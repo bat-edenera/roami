@@ -39,4 +39,8 @@ $(function(){
   $('.j-navList').on('click',function(){
     $('.j-navList').hide();
   })
+  $('.j-navList>ul li').on('click', function (e) {
+    e.stopPropagation();
+    $(this).find('ul').toggle();
+  })
 })

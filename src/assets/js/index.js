@@ -42,3 +42,12 @@ $('.j-toTop').on('click', function () {
     scrollTop: 0
   }, 600);
 })
+
+$(document).on('scroll',function(){
+  var t  = document.documentElement.scrollTop;
+  if(t>690){
+    $('.header').addClass('fixed')
+  }else{
+    $('.header').removeClass('fixed')
+  }
+})
