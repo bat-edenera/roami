@@ -97,9 +97,15 @@
         }
       }
       &.form2{
+        width: 600px;
         .item{
           .right{
+            width: auto;
+            img{
+              padding-top: 10px;
+            }
             input{
+              width: auto;
               color: #333333;
             }
           }
@@ -118,7 +124,7 @@
     }
     .btn{
       width: 1020px;
-      text-align: center;
+      text-align: right;
       button{
         width: 120px;
         height: 36px;

@@ -81,3 +81,52 @@ Object.assign(Export.prototype, {
 		this.sure();
 	}
 })
+
+//查看infomation
+export function Infomation() {
+	this.options = {
+		overClickable: true
+	}
+	this.$dom = {
+		box: $('.j-infoDeatilModal'),
+		close: $('.j-infoDeatilModal .close'),
+	}
+	Modal.call(this);
+}
+Infomation.prototype = Object.create(Modal.prototype);
+//公告
+export function Annouce() {
+	this.options = {
+		overClickable: true
+	}
+	this.$dom = {
+		box: $('.j-annouceModal'),
+		close: $('.j-annouceModal .close'),
+	}
+	Modal.call(this);
+}
+Annouce.prototype = Object.create(Modal.prototype);
+//链接
+export function Link() {
+	this.options = {
+		overClickable: true
+	}
+	this.$dom = {
+		box: $('.j-linkModal'),
+		close: $('.j-linkModal .close'),
+	}
+	Modal.call(this);
+}
+Link.prototype = Object.create(Modal.prototype);
+//查看最近卖出卡密
+export function Kami() {
+	this.options = {
+		overClickable: true
+	}
+	this.$dom = {
+		box: $('.j-kamiModal'),
+		close: $('.j-kamiModal .close'),
+	}
+	Modal.call(this);
+}
+Kami.prototype = Object.create(Modal.prototype);

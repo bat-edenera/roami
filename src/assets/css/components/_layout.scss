@@ -146,12 +146,13 @@
 }
 .header{
   height: 54px;
-  overflow: hidden;
   background: #fff;
   position: relative;
   z-index: 11;
   .logo{
     float: left;
+    height: 54px;
+    overflow: hidden;
   }
   .info{
     float: left;
@@ -164,6 +165,7 @@
   .statebar{
     float: right;
     line-height: 54px;
+    height: 54px;
     color: #666;
     a{
       font-size: 13px;
@@ -175,11 +177,44 @@
       }
     }
     .user{
+      position: relative;
       display: inline-block;
       height: 30px;
       border-left: 1px solid $bd;
       line-height: 30px;
       vertical-align: middle;
+      .dropdown{
+        display: none;
+        position: absolute;
+        background: #fff;
+        top: 35px;
+        left: 50px;
+        width: 115px;
+        height: 131px;
+        font-size: 12px;
+        color: #999;
+        text-align: center;
+        border: 1px solid #dddddd;
+        border-radius: 6px;
+        ul{
+          padding-top: 5px;
+          li{
+            line-height: 27px;
+            border-bottom: 1px solid #dddddd;
+            &:last-child{
+              border-bottom: none;
+            }
+            a{
+              font-size: 12px;
+              img{
+                vertical-align: sub;
+                margin-right: 6px;
+              }
+              margin: 0;
+            }
+          }
+        }
+      }
       .ico-out{
         font-size: 26px;
       }

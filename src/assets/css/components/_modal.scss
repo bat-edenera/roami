@@ -113,3 +113,164 @@
   }
 
 }
+.infoDetail-modal{
+  width: 900px;
+  border-radius: 8px;
+  overflow: hidden;
+  &.kami-modal{
+    .info{
+      padding: 20px;
+    }
+  }
+  .title{
+    border-bottom: 1px solid #e8e8e8;
+    background: #fff;
+    padding: 0 15px 0 18px;
+    line-height: 55px;
+    .close{
+      width: 12px;
+      height: 12px;
+      background: url(../images/icon/ico-close.png) no-repeat 50% 50%;
+      top: 24px;
+      cursor: pointer;
+      right: 15px;
+      position: absolute;
+    }
+  }
+  .info{
+    p{
+      text-align: center;
+      span{
+        cursor: pointer;
+      }
+      input{
+        color: #ff7f00;
+        width: 285px;
+      }
+    }
+    padding-bottom: 50px;
+    margin: 15px;
+    font-size: 14px;
+    color: #333;
+    position: relative;
+    .t1{
+      padding-bottom: 5px;
+    }
+    .t2{
+      line-height: 26px;
+      color: #666;
+      margin-bottom: 15px;
+    }
+    
+  }
+  .time{
+    color: #666;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: right;
+    font-size: 14px;
+    padding: 15px;
+  }
+}
+.link-modal{
+  width: 900px;
+  border-radius: 8px;
+  overflow: hidden;
+  .title{
+    border-bottom: 1px solid #e8e8e8;
+    background: #fff;
+    padding: 0 15px 0 18px;
+    line-height: 55px;
+    .close{
+      width: 12px;
+      height: 12px;
+      background: url(../images/icon/ico-close.png) no-repeat 50% 50%;
+      top: 24px;
+      cursor: pointer;
+      right: 15px;
+      position: absolute;
+    }
+  }
+  .content{
+    padding: 8px 20px;
+    .left{float: left;}
+    .right{
+      float: left;
+      padding-left: 20px;
+    }
+    .t1{
+      line-height: 36px;
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 10px;
+      img{
+        vertical-align: sub;
+      }
+      button{
+        width: 120px;
+        height: 36px;
+        transition: .2s ease;
+        color: #fff;
+        margin-left: 10px;
+        border-radius: 4px;
+        font-size: 14px;
+        i{
+          vertical-align: sub;
+          margin-right: 8px;
+          font-size: 18px;
+          &.ico-restore{
+            vertical-align: middle;
+            font-size: 25px;
+          }
+        }
+        &.btn1{
+          background: $blue;
+          &:hover{
+            background: $dark;
+          }
+        }
+        &.btn2{
+          background: #ea2b3b;
+          &:hover{
+            background: #d81e2e;
+          }
+        }
+      }
+    }
+    .info{
+      overflow: hidden;
+      margin-bottom: 8px;
+      padding: 8px 0px;
+      font-size: 14px;
+      color: #666;
+      
+      p{
+        line-height: 36px;
+        .link{
+          color: $orange;
+          background: none;
+        }
+        span.btn{
+          cursor: pointer;
+          margin-left: 4px;
+          &:hover{
+            color: $orange;
+          }
+        }
+      }
+    }
+    .tip{
+      font-size: 14px;
+      line-height: 55px;
+      color: #666;
+      a{
+        color: $orange;
+      }
+    }
+    .code{
+      margin-bottom: 25px;
+    }
+  }
+}

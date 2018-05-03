@@ -70,11 +70,9 @@
   .box{
     .table{
       table{
-        td{
-          text-align: left;
-        }
         tr.none{
           td{
+            text-align: left;
             font-size: 14px;
           }
         }

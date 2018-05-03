@@ -10,6 +10,36 @@
         height: 34px;
         font-size: 13px;
         color: #666;
+        &.btn-item{
+          text-align: center;
+          button{
+            font-size: 14px;
+            width: 120px;
+            height: 36px;
+            border-radius: 6px;
+            transition: .3s ease;
+            color: #fff;background: $blue;
+            &:hover{
+              background: $dark;
+            }
+          }
+        }
+        .part{
+          width: 50%;
+          float: left;
+          overflow: hidden;
+          .ico-del{
+            font-size: 18px;
+            color: #666;
+            margin-left: 15px;
+          }
+          .right{
+            width: auto;
+            input[type=text]{
+              width: 140px;
+            }
+          }
+        }
         &.grid{
           height: 58px;
         }
@@ -52,6 +82,19 @@
             border: 1px solid #c3c2c2;
             text-align: center;
             border-radius: 0 4px 4px 0;
+          }
+          .bext{
+            position: absolute;
+            left: 22px;
+            top: 0;
+            height: 34px;
+            width: 46px;
+            font-size: 14px;
+            color: #4c4c4c;
+            background: #f0efef;
+            border: 1px solid #c3c2c2;
+            text-align: center;
+            border-radius: 4px 0 0 4px;
           }
           select{
             -webkit-appearance: none;
