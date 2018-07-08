@@ -274,3 +274,64 @@
     }
   }
 }
+.newInfo-modal{
+  width: 800px;
+  height: 420px;
+  border-radius: 8px;
+  overflow: hidden;
+  .title{
+    border-bottom: 1px solid #e8e8e8;
+    background: #fff;
+    padding: 0 15px 0 18px;
+    margin-bottom: 30px;
+    line-height: 55px;
+    .close{
+      width: 12px;
+      height: 12px;
+      background: url(../images/icon/ico-close.png) no-repeat 50% 50%;
+      top: 24px;
+      cursor: pointer;
+      right: 15px;
+      position: absolute;
+    }
+  }
+  .item{
+    overflow: hidden;
+    margin-bottom: 21px;
+    .left{
+      float: left;
+      width: 110px;
+      text-align: right;
+      font-size: 14px;
+      color: #333;
+      line-height: 34px;
+      height: 34px;
+    }
+    .right{
+      margin-left: 22px;
+      float: left;
+      input,textarea{
+        line-height: 32px;
+        padding: 0 12px;
+        width: 640px;
+        height: 34px;
+        border-radius: 4px;
+        font-size: 12px;
+        color: #666;
+        border: 1px solid #ddd;
+      }
+      textarea{
+        resize: none;
+        height: 118px;
+      }
+      button{
+        width: 94px;
+        height: 36px;
+        border-radius: 5px;
+        background: $blue;
+        color: #fff;
+        font-size: 14px;
+      }
+    }
+  }
+}

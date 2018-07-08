@@ -1,4 +1,3 @@
-import printMe from './print.js';
 import './assets/css/main.scss';
 
 if(process.env.NODE_ENV!=='production'){

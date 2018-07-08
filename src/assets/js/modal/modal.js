@@ -94,6 +94,18 @@ export function Infomation() {
 	Modal.call(this);
 }
 Infomation.prototype = Object.create(Modal.prototype);
+//写infomation
+export function NewInfo() {
+	this.options = {
+		overClickable: true
+	}
+	this.$dom = {
+		box: $('.j-newInfoModal'),
+		close: $('.j-newInfoModal .close'),
+	}
+	Modal.call(this);
+}
+NewInfo.prototype = Object.create(Modal.prototype);
 //公告
 export function Annouce() {
 	this.options = {

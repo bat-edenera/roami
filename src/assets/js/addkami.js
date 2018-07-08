@@ -10,4 +10,11 @@ $(function(){
       $('.j-way.way1').hide();
     }
   })
+
+  $('.j-save').on('click',function(e){
+    e.preventDefault();
+    $('form').hide();
+    $('.j-success').show();
+    $('.j-fail').show();
+  })
 })

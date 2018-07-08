@@ -123,5 +123,41 @@
         }
       }
     }
+    .success{
+      display: none;
+      padding-top: 65px;
+      text-align: center;
+      .state{
+        font-size: 16px;
+        color: #6eb92b;
+        line-height: 80px;
+        img{
+          vertical-align: middle;
+          margin-right: 10px;
+        }
+      }
+      .info{
+        color: #337ab7;
+        font-size: 12px;
+      }
+    }
+    .fail{
+      display: none;
+      padding-top: 65px;
+      text-align: center;
+      .state{
+        font-size: 16px;
+        color: #f76260;
+        line-height: 80px;
+        img{
+          vertical-align: middle;
+          margin-right: 10px;
+        }
+      }
+      .info{
+        color: #337ab7;
+        font-size: 12px;
+      }
+    }
   }
 }

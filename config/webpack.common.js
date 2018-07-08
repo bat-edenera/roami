@@ -1,7 +1,7 @@
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-var pages = ['index','userinfo','safety','settle','complaint','withdraw','addcate','goodlist','addgood','addkami','kamilist','kamimanage','kamitrash','sold','link','order','log','income','seo','income','payway','coupon','addcoupon','baike','infomation'];
+var pages = ['index','userinfo','safety','settle','complaint','withdraw','addcate','goodlist','addgood','addkami','kamilist','kamimanage','kamitrash','sold','link','order','log','income','seo','income','payway','coupon','addcoupon','baike','infomation','exchange'];
 var confs = {
 	entry: {
 		main: path.resolve(__dirname, '../src/assets/js/common.js')

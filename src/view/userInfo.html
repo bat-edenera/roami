@@ -12,7 +12,7 @@
 	<div class="main clearfix">
 		#include("./widget/sidebar.html")
 		<div class="container userinfo scroll">
-			<div class="box init b1">
+			<div class="box init b1 j-base">
 				<div class="title">用户信息<span>User information</span></div>
 				<form action="" class="clearfix">
 					<div class="subtitle">商户基本信息</div>
@@ -132,7 +132,69 @@
 				</form>
 				<div class="btn">
 					<button class="t1">保存设置</button>
-					<button class="t2">修改收款信息</button>
+					<button class="t2 j-toEdit">修改收款信息</button>
+				</div>
+			</div>
+			<div class="box init b2 j-edit">
+				<div class="title">用户信息
+					<span>User information</span>
+				</div>
+				<form action="" class="clearfix">
+					<div class="subtitle">修改基本信息</div>
+					<div class="item">
+						<p class="tip">
+							<i class="xcFont ico-alert"></i>您当前的操作属于敏感操作，需要验证您的手机短信，验证成功以后 该手机号将做为您的密保手机，不可修改
+						</p>
+					</div>
+					<div class="item clearfix">
+						<span class="left">收款方式</span>
+						<div class="right">
+							<select name="" id="">
+								<option value="">支付宝支付</option>
+							</select>
+						</div>
+					</div>
+					<div class="item clearfix">
+						<span class="left">支付宝账户</span>
+						<div class="right">
+							<input type="text" value="526435636">
+						</div>
+					</div>
+					<div class="item clearfix">
+						<span class="left">收款人二维码</span>
+						<div class="right">
+							<label for="file"></label>
+							<input type="file" id="file">
+						</div>
+					</div>
+					<div class="item clearfix">
+						<span class="left">收款人姓名</span>
+						<div class="right">
+							<input type="text" value="wx465">
+						</div>
+					</div>
+					<div class="item clearfix">
+						<span class="left">身份证号</span>
+						<div class="right">
+							<input type="text" value="4564515164564748">
+						</div>
+					</div>
+					<div class="item clearfix">
+						<span class="left">手机号</span>
+						<div class="right">
+							<input type="text" value="15326458254">
+							<div class="ext">发送验证码</div>
+						</div>
+					</div>
+					<div class="item clearfix">
+						<span class="left">验证码</span>
+						<div class="right">
+							<input type="text" style="width: 120px;">
+						</div>
+					</div>
+				</form>
+				<div class="btn">
+					<button class="t1">立即修改</button>
 				</div>
 			</div>
 		</div>
