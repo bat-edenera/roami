@@ -1,0 +1,170 @@
+.container.exchange{
+  .title{
+    .tip{
+      font-size: 14px !important;
+      i{
+        font-size: 24px;
+        float: left;
+      }
+    }
+  }
+  .state{
+    .top{
+      padding-top: 28px;
+      text-align: center;
+      img{
+        position: relative;
+        top: 10px;
+        margin-right: 25px;
+      }
+      .infos{
+        display: inline-block;
+        .t1{
+          text-align: left;
+          font-size: 24px;
+          color: #333;
+          line-height: 40px;
+        }
+        .t2{
+          text-align: left;
+          line-height: 30px;
+          font-size: 16px;
+          color: #666;
+        }
+      }
+    }
+    &.state2{
+      .top{
+        img{
+          top:20px;
+        }
+        .infos{
+          .t2{
+            color: #d83434;
+            text-indent: 1px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .tables{
+      padding: 35px 75px 0;
+      table{
+        width: 100%;
+        border-collapse: collapse;
+        td{
+          vertical-align: middle;
+          border: 1px solid #ddd;
+          &:first-child{
+            width: 140px;
+            height: 48px;
+            background: $blue;
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+          }
+          &:last-child{
+            p.info{
+              padding-left: 22px;
+              font-size: 14px;
+              color: #666;
+            }
+            .talk{
+              height: 162px;
+              overflow-y: auto;
+              padding: 12px 12px 0;
+              .item{
+                overflow: hidden;
+                .sub1{
+                  float: right;
+                  .t1{
+                    color: #999;
+                    font-size: 14px;
+                    margin-bottom: 14px;
+                    span{
+                      display: inline-block;padding: 2px 5px;
+                      color: #fff;
+                      background: $blue;
+                      border-radius: 4px;
+                      margin-left: 8px;
+                    }
+                  }
+                  .t2{
+                    color: #999;
+                    font-size: 16px;
+                    line-height: 34px;
+                    background: #eaeef3;
+                    border-radius: 5px;
+                    padding: 0 8px;
+                  }
+                }
+                .sub2{
+                  .t1{
+                    color: #999;
+                    font-size: 14px;
+                    margin-bottom: 14px;
+                    span{
+                      display: inline-block;padding: 2px 5px;
+                      color: #fff;
+                      background: #d83434;
+                      border-radius: 4px;
+                      margin-right: 8px;
+                    }
+                  }
+                  .t2{
+                    display: inline-block;
+                    color: #999;
+                    font-size: 16px;
+                    line-height: 34px;
+                    background: #eaeef3;
+                    border-radius: 5px;
+                    padding: 0 8px;
+                  }
+                }
+              }
+            }
+            .add{
+              padding: 12px;
+              textarea{
+                width: 100%;
+                resize: none;
+                border: 1px solid #ddd;
+                padding: 8px 10px;
+                height: 88px;
+              }
+              input{
+                visibility: hidden;
+                width: 0;
+                height: 0;
+              }
+              .btn{
+                text-align: right;
+                padding-top: 8px;
+              }
+              label{
+                float: left;
+                background: #ff7f00;
+              }
+              label,button{
+                width: 90px;
+                height: 36px;
+                line-height: 36px;
+                border-radius: 5px;
+                color: #fff;
+                font-size: 16px;
+                text-align: center;
+              }
+              .btn1{
+                background: #d83434;
+                margin-right: 10px;
+              }
+              .btn2{
+                background: $blue;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
