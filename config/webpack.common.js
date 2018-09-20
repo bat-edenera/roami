@@ -11,7 +11,7 @@ var confs = {
 	output: {
 		filename: 'js/[name][hash:4].js',
 		path: path.resolve(__dirname, '../dist'),
-		publicPath: '/'
+		// publicPath: '/static/'
 	},
 	module:{
 		rules:[
@@ -46,7 +46,8 @@ var confs = {
 	},
 	plugins: [
 		new webpack.ProvidePlugin({ 
-			$: "jquery"
+			$: "jquery",
+			jQuery: "jquery"
 	  }),
 		new CleanWebpackPlugin('dist',{
 			root:path.resolve(__dirname, '../'),

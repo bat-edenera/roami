@@ -1,0 +1,50 @@
+.driverPhoto{
+  .top{
+    padding-top: .3rem;
+    span{
+      display: inline-block;
+      height: .66rem;
+      margin-left: .4rem;
+      font-size: 0.3rem;
+      padding: .12rem 0;
+      border-bottom: .06rem solid transparent;
+      &.active{
+        color: $color;
+        border-color: $color;
+      }
+    }
+  }
+  .content{
+    display: none;
+    &.active{
+      display: block;
+    }
+    p{
+      color: #333;
+      font-size: 0.28rem;
+      line-height: .40rem;
+      margin-bottom: .4rem;
+      &.img1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img{
+          width: 3.2rem;
+        }
+      }
+      &.img{
+        text-align: center;
+        img.img2{
+          width: 5.56rem;
+        }
+        img.img3{
+          width: 3.78rem;
+        }
+        img.img4{
+          width: 6.38rem;
+        }
+      }
+    }
+    padding: .4rem;
+  }
+}

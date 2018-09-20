@@ -1,0 +1,30 @@
+body.about{
+  padding-top: .92rem;
+  .top{
+    text-align: center;
+    img{
+      width: 1.26rem;
+      margin-bottom: 0.26rem;
+    }
+    p{
+      color: #585756;
+      font-size: 0.28rem;
+      &.t1{
+        font-size: 0.24rem;
+      }
+    }
+  }
+  .content{
+    padding: .5rem .4rem 0;
+    .t1{
+      color: #7B7B7B;
+      font-size: .28rem;
+      margin-bottom: 0.8rem;
+    }
+    .t2{
+      color: #323232;
+      font-size: 0.28rem;
+      line-height: .4rem;
+    }
+  }
+}
