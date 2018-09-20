@@ -31,7 +31,7 @@ var confs = {
 				loader: 'url-loader',
 				options: {
 					limit: 512,
-					name: "images/[name][hash:4].[ext]"
+					name: "/images/[name][hash:4].[ext]"
 				}
 			},
 			{
