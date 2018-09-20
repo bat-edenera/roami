@@ -1,0 +1,114 @@
+.container{
+  width: 1500px;
+  min-width: 1500px;
+  margin: 0 auto;
+  .left{float: left;}
+  .right{float: right;}
+}
+.head1{
+  font-size: 14px;
+  color: #5a5a5a;
+  padding: 25px 0 10px;
+  overflow: hidden;
+  .left{
+    float: left;
+    a{
+      display: inline-block;
+      line-height: 47px;
+    }
+  }
+  .right{
+    float: right;
+    overflow: hidden;
+    .search{
+      float: left;
+      border: 1px solid #eaeaea;
+      width: 383px;
+      line-height: 47px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      span{
+        display: inline-block;
+        width: 47px;
+        height: 47px;
+        background: red;
+      }
+      input{
+        line-height: 47px;
+        padding-left: 15px;
+      }
+    }
+    a{
+      margin-left: 15px;
+      border-left: 1px solid #eaeaea;
+      float: right;
+      width: 50px;
+      height: 49px;
+    }
+  }
+}
+.head2{
+  padding-bottom: 22px;
+  overflow: hidden;
+  .logo img{
+    height: 55px;
+  }
+  .nav{
+    overflow: hidden;
+    li{
+      float: left;
+      line-height: 56px;
+      padding: 0 15px;
+      margin-left: 10px;
+      color: #333;
+      font-size: 14px;
+      a{
+        display: block;
+      }
+      &.active,&:hover{
+        background: #46b8da;
+        color: #fff;
+      }
+    }
+  }
+}
+.content{
+  padding-bottom: 40px;
+  padding-top: 90px;
+  background: url(../images/bg.png) no-repeat 50% 0 #f2f3f7;
+  .container{
+    background: #fff;
+    margin-bottom: 26px;
+    &.ctx1{
+      height: 465px;
+      padding: 20px 15px 45px;
+      .wrapper{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .box1{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 268px;
+          height: 100%;
+          flex-wrap: wrap;
+          a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 50%;
+            height: 50%;
+          }
+        }
+      }
+    }
+    &.ctx2{
+      height: 423px;
+      background: url(../images/save.jpg) no-repeat 50% 50% #fff;
+    }
+  }
+}
