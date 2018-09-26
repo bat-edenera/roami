@@ -1,0 +1,267 @@
+$theme:#298cd8;
+.mindex{
+  width: 7.5rem;
+  margin: 0 auto;
+  background: #fff;
+  .header{
+    padding-top: 0.4rem;
+    background: $theme;
+    text-align: center;
+    padding-bottom: 0.35rem;
+    img{
+      width: 3.04rem;
+    }
+    .search{
+      margin-top: 0.2rem;
+      margin-left: .19rem;
+      width: 7.12rem;
+      height: .72rem;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      font-size: .2rem;
+      img{
+        width: .58rem;
+        margin-left: .08rem;
+      }
+      input{
+        width: 6rem;
+      }
+    }
+  }
+  .wrapper{
+    padding: 0 .2rem;
+  }
+  .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 0.42rem;
+    a{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: .96rem;
+      color: $theme;
+      font-size: .26rem;
+      span.img{
+        padding: 0;
+        background: $theme;
+        display: inline-block;
+        width: .96rem;
+        height: .96rem;
+        border-radius: .48rem;
+        line-height: .96rem;
+        text-align: center;
+        img{
+          vertical-align: middle;
+          height: .56rem;
+        }
+      }
+      span{
+        padding: .3rem 0 .3rem;
+      }
+    }
+  }
+  .inner{
+    .title{
+      width: 100%;
+      font-size: .3rem;
+      color: #333;
+      position: relative;
+      padding-top: 0.22rem;
+      span{
+        position: relative;
+        z-index: 2;
+        padding-right: .2rem;
+        line-height: .6rem;
+        background: #fff;
+      }
+      &:after{
+        position: absolute;
+        width: 100%;
+        content: '';
+        height: 6px;
+        border-radius: 3px;
+        background: #eee;
+        right: 0;
+        top: .5rem;
+      }
+    }
+    &.prod1{
+      ul{
+        margin-top: 15px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li{
+           width: 4.26rem;
+           height: 3.90rem;
+           overflow: hidden;
+           border-top: 1px solid #eaeaea;
+           &.face{
+             border-top: none;
+             position: relative;
+             width: 2.84rem;
+             color: #fff;
+             padding: .25rem 0 0 .25rem;
+             img{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                z-index: 0;
+                left: 0;
+                top: 0;
+              }
+              .t1{
+                font-size: .3rem;
+                font-weight: bold;
+                position: relative;
+                z-index: 1;
+              }
+              .t2{
+                padding-top: .1rem;
+                font-size: 22px;
+                position: relative;
+                z-index: 1;
+              }
+           }
+           .item{
+             height: 50%;
+             width: 100%;
+             &.item1{
+              position: relative;
+              padding: .18rem 0 0 .18rem;
+              border-bottom: 1px solid #eaeaea;
+              border-right: 1px solid #eaeaea;
+              img{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                z-index: 0;
+                left: 0;
+                top: 0;
+              }
+              .t1{
+                display: block;
+                font-size: .3rem;
+                font-weight: bold;
+                position: relative;
+                z-index: 1;
+              }
+              .t2{
+                padding-top: .05rem;
+                font-size: .22rem;
+                position: relative;
+                z-index: 1;
+              }
+             }
+             &.item2 {
+                text-align: center;
+                float: left;
+                width: 50%;
+                border-bottom: 1px solid #eaeaea;
+                border-right: 1px solid #eaeaea;
+                span{
+                  display: block;
+                  margin-top: .22rem;
+                  font-size: .22rem;
+                }
+                img{
+                  width: 1.61rem;
+                  height: .94rem;
+                  margin-top: .2rem;
+                  
+                }
+             }
+           }
+        }
+      }
+    }
+    &.prod2{
+      ul{
+        margin: 0 -.05rem;
+        overflow: hidden;
+        li{
+          float: left;
+          width: 33.3333%;
+          padding: .05rem;
+          a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border: 1px solid #eaeaea;
+            padding: .3rem 0 .2rem;
+            .t1{
+              margin-top: .2rem;
+              font-size: 0.22rem;
+              color: #000;
+              line-height: .36rem;
+            }
+            .t2{
+              font-size: 0.18rem;
+              color: #000;
+              line-height: .3rem;
+            }
+          }
+        }
+      }
+    }
+    &.prod3{
+      ul{
+        margin: 0 -.1rem;
+        overflow: hidden;
+        li{
+          float: left;
+          width: 50%;
+          padding: .1rem;
+          .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background: #f0f0f0;
+            p{
+              line-height: 0.68rem;
+              font-size: .32rem;
+              color: #333;
+            }
+          }
+        }
+      }
+    }
+  }
+  .friend-link{
+    margin-top: .2rem;
+    background: #ddd;
+    text-align: center;
+    padding: .05rem .8rem;
+    font-size: 0;
+    img{
+      width: 1.11rem;
+      height: .74rem;
+    }
+    a{
+      display: inline-block;
+      padding: .05rem .1rem;
+    }
+  }
+  .footer{
+    height: 2.48rem;
+    text-align: center;
+    padding-top: .80rem;
+    p{
+      line-height: .3rem;
+      font-size: .14rem;
+      color: #666;
+      a{
+        margin: 0 .1rem;
+      }
+    }
+  }
+}
