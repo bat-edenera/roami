@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const path = require('path');
 const merge = require('webpack-merge');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -8,6 +9,11 @@ const extractCSS = new ExtractTextPlugin('css/common[contenthash:4].css');
 const extractSASS = new ExtractTextPlugin('css/main[contenthash:4].css');
 module.exports = merge(common, {
 	devtool: "cheap-module-source-map",
+	output: {
+		filename: 'js/[name][hash:4].js',
+		path: path.resolve(__dirname, '../dist'),
+		publicPath: '/static/'
+	},
 	module:{
 		rules:[
 			{
@@ -25,6 +31,14 @@ module.exports = merge(common, {
 					//resolve-url-loader may be chained before sass-loader if necessary
 					use: ['css-loader', 'sass-loader']
 				})
+			},
+			{
+				test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+				loader: 'url-loader',
+				options: {
+					limit: 512,
+					name: "/images/[name][hash:4].[ext]"
+				}
 			},
 		]
 	},

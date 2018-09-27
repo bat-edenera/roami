@@ -8,11 +8,6 @@ var confs = {
 	entry: {
 		// jquery:"jquery"
 	},
-	output: {
-		filename: 'js/[name][hash:4].js',
-		path: path.resolve(__dirname, '../dist'),
-		// publicPath: '/static/'
-	},
 	module:{
 		rules:[
 			{
@@ -25,14 +20,6 @@ var confs = {
 			{
 				test: /\.(htm|html)$/i,
         loader: 'html-withimg-loader'
-			},
-			{
-				test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-				loader: 'url-loader',
-				options: {
-					limit: 512,
-					name: "/images/[name][hash:4].[ext]"
-				}
 			},
 			{
 				test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
