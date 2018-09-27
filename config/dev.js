@@ -7,7 +7,7 @@ const app = express();
 const config = require('./webpack.dev.js');
 var port = 8080;
 const compiler = webpack(config);
-var page = '/mindex.html';
+var page = '/home.html';
 
 // Tell express to use the webpack-dev-middleware and use the webpack.config.js
 // configuration file as a base.
