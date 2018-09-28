@@ -157,6 +157,10 @@
                 font-size: 14px;
                 border: 1px solid #0076d0;
                 line-height: 28px;
+                &:hover{
+                  background: #0076d0;
+                  color: #fff;
+                }
                 &.t1{
                   color: #fff;
                   background: #0076d0;
@@ -199,14 +203,14 @@
       }
       &.product{
         background: linear-gradient(to bottom,#fff 0%,rgba(255,255,255,0) 30%,rgba(255,255,255,0) 50%);
-        padding: 65px 25px 0;
+        padding: 65px 13px 0 14px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
         .inner{
           &.half{
-            width: 49%;
+            width: 49.6%;
             .title:after{
               width: 82%;
             }
@@ -247,7 +251,7 @@
               font-size: 22px;
               color: #454545;
               &.face{
-                margin-right: 10px;
+                margin-right: 5px;
                 position: relative;
                 color: #fff;
                 padding: 20px;
@@ -281,13 +285,16 @@
                   text-align: center;
                   border-radius: 23px;
                   font-weight: bold;
+                  &:hover{
+                    background: #f0f0f0;
+                  }
                 }
               }
             }
           }
           &.prod1{
               ul{
-                height: 320px;
+                height: 254px;
                 li{
                   height: 100%;
                   width: 20%;
@@ -297,11 +304,13 @@
                     }
                   }
                   .item{
+                    overflow: hidden;
                     padding: 0 15px;
                     height: 50%;
                     text-align: right;
                     border: 1px solid #eaeaea;
                     border-left: none;
+                    position: relative;
                     &:first-child{
                       border-bottom: none;
                     }
@@ -309,6 +318,14 @@
                       display: block;
                       text-align: left;
                       line-height: 57px;
+                      position: relative;
+                      z-index: 1;
+                    }
+                    img{
+                      position: absolute;
+                      z-index: 0;
+                      left: 0;
+                      top: 0;
                     }
                   }
                 }
@@ -316,12 +333,12 @@
           }
           &.prod2{
             ul{
-              height: 317px;
+              height: 255px;
               li{
                 height: 100%;
-                width: 33.3333%;
+                width: 33.3334%;
                 &.face{
-                  margin-right: 5px;
+                  margin-right: 2px;
                 }
                 &:nth-child(2){
                   .item{
@@ -334,13 +351,23 @@
                   text-align: center;
                   border: 1px solid #eaeaea;
                   border-left: none;
+                  position: relative;
+                  overflow: hidden;
                   &:first-child{
                     border-bottom: none;
                   }
                   span{
                     display: block;
                     line-height: 57px;
+                    position: relative;
+                    z-index: 2;
                   }
+                  img{
+                      position: absolute;
+                      z-index: 0;
+                      left: 0;
+                      top: 0;
+                    }
                 }
               }
             }
@@ -351,13 +378,13 @@
             justify-content: space-between;
             flex-wrap: wrap;
             ul{
-              width: 49%;
-              height: 202px;
+              width: 49.5%;
+              height: 161px;
               // margin-bottom: 50px;
               li{
-                width: 60%;
+                width: 59%;
                 &.face{
-                  width: 40%;
+                  width: 41%;
                   margin-right: 0;
                 }
                 .other{
@@ -374,7 +401,7 @@
                     color: #333;
                   }
                   .t3{
-                    padding-top: 30px;
+                    padding-top: 10px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
