@@ -1,85 +1,131 @@
-$theme:#298cd8;
 .home-page{
-  width: 7.5rem;
-  margin: 0 auto;
-  background: #fff;
-  .header{
-    padding-bottom: 0.3rem;
-    background: $theme;
-    text-align: center;
-    padding-top: .15rem;
-    img{
-      display: inline-block;
-      width: 3.04rem;
-    }
-    i{
-      float: left;
-      width: .2rem;
-      cursor: pointer;
-      height: .2rem;
-      border-top: 2px solid #fff;
-      border-right: 2px solid #fff;
-      transform:  translate(.3rem,.2rem) rotate(-135deg);
-    }
-    .search{
-      border-radius: .08rem;
-      margin-top: 0.2rem;
-      margin-left: .19rem;
-      width: 7.12rem;
-      height: .72rem;
-      background: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      font-size: .2rem;
-      img{
-        width: .58rem;
-        margin-left: .08rem;
-      }
-      input{
-        width: 6rem;
-      }
-    }
+  .container{
+    width: 1350px;
+    margin:  0 auto;
   }
-  .content{
-    padding: .17rem; 
-    .banner{
-      font-size: 0.6rem;
-      font-weight: bold;
-      color: #fff;
-      width: 7.16rem;
-      height: 2.46rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: url(../images/inbg.jpg) 50% 50% no-repeat;
+  .header{
+    .search{
+      height: 50px;
+      background: #2e6da4;
+      .box{
+        height: 50px;
+        float: right;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        input{
+          background: none;
+          color: #fff;
+          font-size: 14px;
+        }
+        img{
+          width: 20px;
+          cursor: pointer;
+        }
+      }
     }
-    ul{
-      overflow: hidden;
-      margin: 0 -.12rem;
-      padding-top: .25rem;
-      li{
+    .logo{
+      padding-top: 27px;
+      float: left;
+      img{
+        width: 317px;
+      }
+    }
+    .nav{
+      float: right;
+      padding-top: 48px;
+      font-size: 14px;
+      &>li{
         float: left;
-        width: 33.3333%;
-        text-align: center;
-        padding: .12rem;
-        a{
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
-          height: 2.34rem;
-          border: 1px solid #eaeaea;
-          img{
-            width: 1.29rem;
+        position: relative;
+        padding-right: 28px;
+        &:last-child{
+          padding-right: 0;
+        }
+        &.sub{
+          padding-right: 45px;
+          &>a{
+            display: inline-block;
+            position: relative;
+            &:after{
+              content: '';
+              position: absolute;
+              left: 100%;
+              top: 7px;
+              margin-left: 6px;
+              width: 0;
+              height: 0;
+              border-bottom: 4px solid transparent;
+              border-left: 4px solid transparent;
+              border-right: 4px solid transparent;
+              border-top: 4px solid #000;
+            }
           }
-          p{
-            padding-top: 0.2rem;
-            font-size: 0.24rem;
-            color: #000;
+          ul{
+            display: none;
+            position: absolute;
+            padding-top: 8px;
+            left: -5px;
+            li{
+              padding: 5px;
+              &:hover{
+                background: #eaeaea;
+              }
+            }
+          }
+          &:hover{
+            ul{
+              display: block;
+            }
           }
         }
       }
     }
+  }
+  .content{
+    .box{
+      padding-top: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .info{
+        color: #000;
+        width: 600px;
+        padding: 0 23px;
+        padding-right: 50px;
+        &.left{
+          padding-left: 80px;
+          padding-right: 0;
+        }
+        .t1{
+          font-size: 36px;
+          font-weight: bold;
+          line-height: 62px;
+        }
+        .t2{
+          font-size: 20px;
+          font-weight: bold;
+        }
+        .t3{
+          font-size: 20px;
+          padding-top: 18px;
+        }
+        a{
+          display: block;
+          text-align: right;
+          font-size: 20px;
+          color: #0096ff;
+        }
+      }
+      img{
+        width: 630px
+      }
+    }
+  }
+  .footer{
+    text-align: center; 
+    line-height: 280px;
+    font-size: 14px;
+    color: #999;
   }
 }

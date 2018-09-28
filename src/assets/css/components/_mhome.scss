@@ -1,0 +1,85 @@
+$theme:#298cd8;
+.mhome-page{
+  width: 7.5rem;
+  margin: 0 auto;
+  background: #fff;
+  .header{
+    padding-bottom: 0.3rem;
+    background: $theme;
+    text-align: center;
+    padding-top: .15rem;
+    img{
+      display: inline-block;
+      width: 3.04rem;
+    }
+    i{
+      float: left;
+      width: .2rem;
+      cursor: pointer;
+      height: .2rem;
+      border-top: 2px solid #fff;
+      border-right: 2px solid #fff;
+      transform:  translate(.3rem,.2rem) rotate(-135deg);
+    }
+    .search{
+      border-radius: .08rem;
+      margin-top: 0.2rem;
+      margin-left: .19rem;
+      width: 7.12rem;
+      height: .72rem;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      font-size: .2rem;
+      img{
+        width: .58rem;
+        margin-left: .08rem;
+      }
+      input{
+        width: 6rem;
+      }
+    }
+  }
+  .content{
+    padding: .17rem; 
+    .banner{
+      font-size: 0.6rem;
+      font-weight: bold;
+      color: #fff;
+      width: 7.16rem;
+      height: 2.46rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: url(../images/inbg.jpg) 50% 50% no-repeat;
+    }
+    ul{
+      overflow: hidden;
+      margin: 0 -.12rem;
+      padding-top: .25rem;
+      li{
+        float: left;
+        width: 33.3333%;
+        text-align: center;
+        padding: .12rem;
+        a{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          height: 2.34rem;
+          border: 1px solid #eaeaea;
+          img{
+            width: 1.29rem;
+          }
+          p{
+            padding-top: 0.2rem;
+            font-size: 0.24rem;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
