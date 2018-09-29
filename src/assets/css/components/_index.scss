@@ -254,7 +254,7 @@
                 margin-right: 5px;
                 position: relative;
                 color: #fff;
-                padding: 20px;
+                padding: 13px;
                 img{
                   height: 100%;
                   position: absolute;
@@ -263,19 +263,21 @@
                   top: 0;
                 }
                 .t1{
-                  font-size: 24px;
+                  font-size: 20px;
+                  font-weight: bold;
                   position: relative;
                   z-index: 1;
                 }
                 .t2{
-                  font-size: 22px;
+                  padding-top: 5px;
+                  font-size: 18px;
                   position: relative;
                   z-index: 1;
                 }
                 a{
                   position: absolute;
-                  bottom: 20px;
-                  left: 20px;
+                  bottom: 13px;
+                  left: 13px;
                   font-size: 24px;
                   color: #ff3b00;
                   background: #fff;
@@ -386,6 +388,9 @@
                 &.face{
                   width: 41%;
                   margin-right: 0;
+                  .t2{
+                    padding-top: 0;
+                  }
                 }
                 .other{
                   padding-top: 15px;
