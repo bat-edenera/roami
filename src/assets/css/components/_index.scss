@@ -1,3 +1,4 @@
+
 .index  {
   .container{
     width: 1200px;
@@ -74,7 +75,7 @@
           display: block;
         }
         &.active,&:hover{
-          background: #46b8da;
+          background: $color;
           color: #fff;
         }
       }
@@ -82,7 +83,7 @@
   }
   .content{
     padding-top: 90px;
-    background: url(../images/bg.jpg) no-repeat 50% 0 #f2f3f7;
+    background: url(../images/bg.jpg) no-repeat 50% 0 #f4f4f4;
     .container{
       background: #fff;
       &.ctx1{
@@ -106,27 +107,25 @@
               align-items: center;
               justify-content: center;
               flex-direction: column;
-              width: 50%;
-              height: 50%;
-              color: #ff6e51;
-              font-size: 20px;
+              width: 33.3333%;
+              height: 33.3333%;
+              color: $color;
+              font-size: 16px;
               img{
                 margin-bottom: 15px;
               }
               &.t1{
                 border-top: 1px solid #eee;
+                border-right: 1px solid #eee;
               }
               &.t2{
                 border-top: 1px solid #eee;
-                border-left: 1px solid #eee;
+                border-right: 1px solid #eee;
               }
               &.t3{
                 border-top: 1px solid #eee;
-                border-bottom: 1px solid #eee;
               }
-              &.t4{
-                border-top: 1px solid #eee;
-                border-left: 1px solid #eee;
+              &.t{
                 border-bottom: 1px solid #eee;
               }
             }
@@ -202,7 +201,7 @@
         }
       }
       &.product{
-        background: linear-gradient(to bottom,#fff 0%,rgba(255,255,255,0) 30%,rgba(255,255,255,0) 50%);
+        background: #fff;
         padding: 65px 13px 0 14px;
         display: flex;
         align-items: center;
@@ -476,7 +475,7 @@
     height: 200px;
     text-align: center;
     padding-top: 80px;
-    background: linear-gradient(to bottom,#f2f3f7 0%,#fff 15%,#fff 20%);
+    background: #f4f4f4;
     p{
       line-height: 24px;
       a{
