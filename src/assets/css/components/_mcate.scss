@@ -1,0 +1,105 @@
+$theme:#298cd8;
+.mcate-page{
+  width: 7.5rem;
+  margin: 0 auto;
+  background: #fff;
+  .header{
+    padding-bottom: 0.3rem;
+    background: $theme;
+    text-align: center;
+    padding-top: .15rem;
+    img{
+      display: inline-block;
+      width: 3.04rem;
+    }
+    i{
+      float: left;
+      width: .2rem;
+      cursor: pointer;
+      height: .2rem;
+      border-top: 2px solid #fff;
+      border-right: 2px solid #fff;
+      transform:  translate(.3rem,.2rem) rotate(-135deg);
+    }
+    .search{
+      border-radius: .08rem;
+      margin-top: 0.2rem;
+      margin-left: .19rem;
+      width: 7.12rem;
+      height: .72rem;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      font-size: .2rem;
+      img{
+        width: .58rem;
+        margin-left: .08rem;
+      }
+      input{
+        width: 6rem;
+      }
+    }
+  }
+  .content{
+    padding: .17rem; 
+    .banner{
+      font-size: 0.6rem;
+      font-weight: bold;
+      color: #fff;
+      width: 7.16rem;
+      height: 2.46rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: url(../images/catebg.jpg) 50% 50% no-repeat;
+      border-radius: 15px;
+    }
+    ul{
+      overflow: hidden;
+      margin: 0 -.12rem;
+      padding-top: .25rem;
+      li{
+        float: left;
+        width: 50%;
+        text-align: center;
+        padding: .12rem;
+        a{
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          flex-direction: column;
+          height: 3.07rem;
+          overflow: hidden;
+          padding-top: 2.3rem;
+          position: relative;
+          img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 3.07rem;
+          }
+          p{
+            position: relative;
+            z-index: 1;
+            font-size: 0.2rem;
+            font-weight: bold;
+            color: #fff;
+            text-align: left;
+            width: 100%;
+            padding-left: .2rem;
+            padding-bottom: .03rem;
+            &.t1{
+              padding-right: .2rem;
+              font-weight: normal;
+              font-size: .12rem;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+      }
+    }
+  }
+}
