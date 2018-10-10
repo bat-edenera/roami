@@ -10,7 +10,7 @@ var confs = {
 	},
 	output: {
 		filename: 'js/[name][hash:4].js',
-		path: path.resolve(__dirname, '../dist'),
+		path: path.resolve(__dirname, '../b2b'),
 		// publicPath: '/static/'
 	},
 	module:{
@@ -41,7 +41,7 @@ var confs = {
 			$: "jquery",
 			jQuery: "jquery"
 	  }),
-		new CleanWebpackPlugin('dist',{
+		new CleanWebpackPlugin('b2b',{
 			root:path.resolve(__dirname, '../'),
 		}),
 		new webpack.optimize.CommonsChunkPlugin({
@@ -59,7 +59,7 @@ var pages = getPage();
 pages.forEach(key=>{
 	confs.entry[key] = path.resolve(__dirname, '../src/assets/js/'+key+'.js');
 	confs.plugins.push(new HtmlWebpackPlugin({
-		filename:path.resolve(__dirname,'../dist/'+key+'.html'),
+		filename:path.resolve(__dirname,'../b2b/'+key+'.html'),
 		template: './src/view/'+key+'.html',
 		inject: true,
 		chunks: ['vendor',key],
