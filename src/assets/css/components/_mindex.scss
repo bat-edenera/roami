@@ -1,11 +1,10 @@
-$theme:#298cd8;
 .mindex{
   width: 7.5rem;
   margin: 0 auto;
   background: #fff;
   .header{
     padding-top: 0.4rem;
-    background: $theme;
+    background: $color;
     text-align: center;
     padding-bottom: 0.35rem;
     img{
@@ -39,17 +38,20 @@ $theme:#298cd8;
     justify-content: space-around;
     flex-wrap: wrap;
     padding-top: 0.42rem;
+    width: 100%;
+
     a{
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
       width: .96rem;
-      color: $theme;
+      color: $color;
       font-size: .26rem;
+      width: 30%;
       span.img{
         padding: 0;
-        background: $theme;
+        background: $color;
         display: inline-block;
         width: .96rem;
         height: .96rem;
@@ -62,7 +64,7 @@ $theme:#298cd8;
         }
       }
       span{
-        padding: .3rem 0 .3rem;
+        padding: .1rem 0 .3rem;
       }
     }
   }
