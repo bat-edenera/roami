@@ -11,7 +11,7 @@ var confs = {
 	output: {
 		filename: 'js/[name][hash:4].js',
 		path: path.resolve(__dirname, '../dist'),
-		// publicPath: '/static/'
+		// publicPath: '/dist/'
 	},
 	module:{
 		rules:[
