@@ -1,5 +1,5 @@
-$color:#2eacff;
-$dark:#4572f4;
+$color:#3cbcf7;
+$dark:#259be8;
 $bd:#e1e1e1;
 html{
   height: 100%;
@@ -23,4 +23,7 @@ body{
 }
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
   color: #c2c2c2;
+}
+@mixin linearbg {
+  background: linear-gradient(90deg,$dark 0,$color 100%);
 }
