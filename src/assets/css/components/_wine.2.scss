@@ -84,7 +84,7 @@
   }
   .content{
     padding-bottom: 50px;
-    background: #f6f6f6;
+    background: #fff;
     margin-top: 40px;
     .banner{
       overflow: hidden;
@@ -171,171 +171,17 @@
         }
       }
     }
-    .swiper-container{
-      .swiper-button-next, .swiper-button-prev{
-        overflow: hidden;
-        outline: none;
-        width: 34px;
-        height: 65px;
-        background: rgba(0,0,0,.2);
-        margin-top: -32px;
-        opacity: 0;
-        transition: .2s ease-in-out;
-        &:after{
-          position: absolute;
-          width: 18px;
-          height: 18px;
-          border-left: 1px solid #fff;
-          border-top: 1px solid #fff;
-          left: 15px;
-          top: 25px;
-          content: '';
-        }
-        
+    .bread{
+      background: #f2f2f2;
+      line-height: 48px;
+      font-size: 18px;
+      color: #999;
+      a:last-child{
+        color: $color;
       }
-      &:hover{
-        .swiper-button-next, .swiper-button-prev{
-          opacity: 1;
-        }
-      }
-      .swiper-button-prev{
-        left: calc(50% - 583px );
-        &:after{
-          transform: rotate(-45deg);
-        }
-      }
-      .swiper-button-next{
-        left: calc(50% + 566px );
-        &:after{
-          left: 5px;
-          transform: rotate(-225deg);
-        }
-      }
-      .swiper-pagination-bullets{
-        .swiper-pagination-bullet{
-          width: 13px;
-          height: 13px;
-          background: #fff;
-          opacity: 1;
-          &.swiper-pagination-bullet-active{
-            background: #ff0000;
-          }
-        }
-        bottom: 72px !important;
-      }
-    }
-    .title{
-        text-align: center;
-        padding-bottom: 30px;
-      }
-    .box1{
-      position: relative;
-      padding-top: 50px;
-      width: 850px;
-      margin: 0 auto;
-      .swiper-container{
-        width: 761px;
-        margin:  0 auto;
-        .swiper-slide{
-          width: 263px;
-          height: 332px;
-          position: relative;
-          span{
-            position: absolute;
-            width: 100%;
-            left: 0;
-            top: 0;
-            text-align: center;
-            line-height: 68px;
-            font-size: 24px;
-            color: #000;
-          }
-        }
-      }
-      .swiper-button-next, .swiper-button-prev{
-        position: absolute;
-        outline: none;
-        width: 50px;
-        height: 65px;
-        background: none;
-        top: 290px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        i{
-          width: 45px;
-          height: 45px;
-          border-left: 1px solid #999;
-          border-top: 1px solid #999;
-          left: 15px;
-          top: 25px;
-        }
-        
-      }
-      .swiper-button-prev{
-        left: 0;
-        i{
-          transform: rotate(-45deg);
-        }
-      }
-      .swiper-button-next{
-        right: 0;
-        i{
-          transform: rotate(-225deg);
-        }
-      }
-    }
-    .box2{
-      padding-top: 70px;
-      width: 832px;
-      margin: 0 auto;
-      ul{
-        margin: 0 -12px;
-        overflow: hidden;
-        li{
-          float: left;
-          width: 33.333%;
-          padding: 12px;
-          img{
-            border: 1px solid #eaeaea;
-          }
-          p.t1{
-            font-weight: bold;
-            font-size: 14px;
-            color: #000;
-            line-height: 28px;
-            height: 56px;
-          }
-          p.t2{
-            line-height: 43px;
-            font-size: 16px;
-            span.new{
-              color: red;
-              margin-right: 10px;
-              font-weight: bold;
-            }
-            span.old{
-              color: #a6a6a6;
-              text-decoration: line-through;
-            }
-            .cart{
-              float: right;
-              background: #ff4242;
-              color: #fff;
-              line-height: 26px;
-              font-size: 12px;
-              margin-top: 8px;
-              padding: 0 8px;
-              transition: .2s ease;
-              border-radius: 3px;
-              box-shadow: 0px 1px 0 0px rgba(0,0,0,.3);
-              &:hover{
-                background: #e63434;
-              }
-            }
-          }
-        }
-      }
+      // span{
+      //   margin: 0 1px;
+      // }
     }
   }
   .footer{
