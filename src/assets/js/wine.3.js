@@ -1,7 +1,7 @@
 import '../css/main.scss';
 import Swiper from 'swiper/dist/js/swiper';
 $(function () {
- new Swiper('.swiper1', {
+  new Swiper('.swiper1', {
     // autoplay: true,//可选选项，自动滑动
     loop: true,
     effect: 'fade',
@@ -16,33 +16,22 @@ $(function () {
     },
   })
 
-  new Swiper('.swiper2', {
-    slidesPerView: 3,
-    spaceBetween: 20,
-    autoplay: true,//可选选项，自动滑动
-    loop: true,
-    speed: 1000,
-    navigation: {
-      nextEl: '.snext',
-      prevEl: '.sprev',
-    },
+  $('.to-top').click(function () {
+    $('html,body').animate({ scrollTop: '0px' }, 500);
   })
-  $('.to-top').click(function(){
-    $('html,body').animate({scrollTop: '0px'}, 500);
-  })
-  $(window).on('scroll',checkScroll);
+  $(window).on('scroll', checkScroll);
   checkScroll();
 })
-function checkScroll(){
+function checkScroll() {
   var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-  if(scrollTop > 750) {
+  if (scrollTop > 750) {
     $('.to-top').show()
-  }else{
+  } else {
     $('.to-top').hide()
   }
-  if(scrollTop > 848) {
+  if (scrollTop > 848) {
     $('.fixed-nav').addClass('fixed');
-  }else {
+  } else {
     $('.fixed-nav').removeClass('fixed');
   }
 }

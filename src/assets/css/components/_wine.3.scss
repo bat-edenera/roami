@@ -1,4 +1,4 @@
-.wine1-page  {
+.wine3-page  {
   .container{
     transform: translate(0,0);
     width: 1200px;
@@ -228,65 +228,8 @@
         text-align: center;
         padding-bottom: 30px;
       }
-    .box1{
-      position: relative;
-      padding-top: 50px;
-      width: 850px;
-      margin: 0 auto;
-      .swiper-container{
-        width: 761px;
-        margin:  0 auto;
-        .swiper-slide{
-          width: 263px;
-          height: 332px;
-          position: relative;
-          span{
-            position: absolute;
-            width: 100%;
-            left: 0;
-            top: 0;
-            text-align: center;
-            line-height: 68px;
-            font-size: 24px;
-            color: #000;
-          }
-        }
-      }
-      .swiper-button-next, .swiper-button-prev{
-        position: absolute;
-        outline: none;
-        width: 50px;
-        height: 65px;
-        background: none;
-        top: 290px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        i{
-          width: 45px;
-          height: 45px;
-          border-left: 1px solid #999;
-          border-top: 1px solid #999;
-          left: 15px;
-          top: 25px;
-        }
-        
-      }
-      .swiper-button-prev{
-        left: 0;
-        i{
-          transform: rotate(-45deg);
-        }
-      }
-      .swiper-button-next{
-        right: 0;
-        i{
-          transform: rotate(-225deg);
-        }
-      }
-    }
     .box2{
-      padding-top: 70px;
+      padding-top: 40px;
       width: 832px;
       margin: 0 auto;
       ul{
