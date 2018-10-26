@@ -171,59 +171,6 @@
         }
       }
     }
-    .swiper-container{
-      .swiper-button-next, .swiper-button-prev{
-        overflow: hidden;
-        outline: none;
-        width: 34px;
-        height: 65px;
-        background: rgba(0,0,0,.2);
-        margin-top: -32px;
-        opacity: 0;
-        transition: .2s ease-in-out;
-        &:after{
-          position: absolute;
-          width: 18px;
-          height: 18px;
-          border-left: 1px solid #fff;
-          border-top: 1px solid #fff;
-          left: 15px;
-          top: 25px;
-          content: '';
-        }
-        
-      }
-      &:hover{
-        .swiper-button-next, .swiper-button-prev{
-          opacity: 1;
-        }
-      }
-      .swiper-button-prev{
-        left: calc(50% - 583px );
-        &:after{
-          transform: rotate(-45deg);
-        }
-      }
-      .swiper-button-next{
-        left: calc(50% + 566px );
-        &:after{
-          left: 5px;
-          transform: rotate(-225deg);
-        }
-      }
-      .swiper-pagination-bullets{
-        .swiper-pagination-bullet{
-          width: 13px;
-          height: 13px;
-          background: #fff;
-          opacity: 1;
-          &.swiper-pagination-bullet-active{
-            background: #ff0000;
-          }
-        }
-        bottom: 72px !important;
-      }
-    }
     .title{
         text-align: center;
         padding-bottom: 30px;
@@ -298,7 +245,7 @@
     width: 166px;
     @include linearbg;
     position: absolute;
-    top: 898px;
+    top: 458px;
     left: calc(50% - 610px);
     z-index: 200;
     ul{
@@ -350,7 +297,7 @@
     }
     &.fixed{
       position: fixed;
-      top: 50px;
+      top: 58px;
     }
   }
   .to-top{

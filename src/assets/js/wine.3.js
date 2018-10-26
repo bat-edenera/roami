@@ -29,7 +29,7 @@ function checkScroll() {
   } else {
     $('.to-top').hide()
   }
-  if (scrollTop > 848) {
+  if (scrollTop > 400) {
     $('.fixed-nav').addClass('fixed');
   } else {
     $('.fixed-nav').removeClass('fixed');
