@@ -40,7 +40,9 @@
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.24.1",
+    "bootstrap": "^4.1.3",
     "liftoff": "^2.3.0",
-    "ora": "^1.3.0"
+    "ora": "^1.3.0",
+    "popper.js": "^1.14.4"
   }
 }
