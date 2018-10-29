@@ -202,7 +202,8 @@
         }
       }
       &.product{
-        background: linear-gradient(to bottom,#fff 0%,rgba(255,255,255,0) 30%,rgba(255,255,255,0) 50%);
+        // background: linear-gradient(to bottom,#fff 0%,rgba(255,255,255,0) 30%,rgba(255,255,255,0) 50%);
+        background: #fff;
         padding: 65px 13px 0 14px;
         display: flex;
         align-items: center;
@@ -219,18 +220,18 @@
           padding-bottom: 50px;
           .title{
             width: 100%;
-            font-size: 30px;
+            font-size: 24px;
             color: #333;
             position: relative;
             span{
               padding:0 15px;
-              // background: #fff;
+              background: #fff;
               position: relative;
               z-index: 2;
             }
             &:after{
               position: absolute;
-              width: 90%;
+              width: 100%;
               content: '';
               height: 6px;
               border-radius: 3px;
@@ -248,7 +249,7 @@
             li{
               height: 100%;
               background: #fff;
-              font-size: 22px;
+              font-size: 18px;
               color: #454545;
               &.face{
                 margin-right: 5px;
@@ -422,8 +423,11 @@
   
           }
           &.prod4{
-            li:first-child{
-              margin-right: 20px;
+            li{
+              &:first-child{
+                margin-right: 20px;
+              }
+              height: auto;
             }
           }
           &.prod5{
@@ -434,13 +438,18 @@
                 background: none;
                 height: 354px;
                 margin-bottom: 15px;
+                border: 1px solid #eaeaea;
                 a{
                   background: #fff;
                   height: 100%;
                   display: flex;
                   align-items: center;
-                  justify-content: center;
+                  justify-content: flex-start;
                   flex-direction: column;
+                  img{
+                    width: 100%;
+                    padding-top: 50px;
+                  }
                   .t1{
                     font-size: 22px;
                     color: #333;
